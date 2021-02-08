@@ -1,14 +1,14 @@
 {
-  "name": "gulpbuild2",
+  "name": "gulp_build",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "user interface toolkit",
+  "author": "@aligarconfree",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp build",
     "gulp": "gulp"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "fancy-log": "^1.3.3",

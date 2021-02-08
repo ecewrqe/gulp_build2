@@ -2,16 +2,8 @@
     "config": {
         "debug": true,
         "data":{
-            "app": "BeauAdmin",
-            "app-name": "BeauAdmin WebApp",
-            "app-flaver": "BeauAdmin WebApp",
-            "user": "Alucado",
-            "email": "",
-            "twitter": "",
-            "avatar": "",
-            "version": "1.0.0",
-            "logo": "logo.png",
-            "copyright": ""
+            "app": "Demo",
+            "app-name": "Demo"
         },
         "compile": {
             "jsUglify": false,
@@ -104,13 +96,7 @@
                     "json": "{$config.output}/media/data",
                     "media": "{$config.output}/media"
                 }
-            },
-            "custom": {
-                "fontawesome": {
-					
-				}
             }
-            
         },
         "app": {
             "base": {
@@ -126,8 +112,7 @@
                     "styles": "{$config.output}/css/app.bundle.css",
                     "scripts": "{$config.output}/js/app.bundle.js"
                 }
-            },
-            "custom": {}
+            }
         }
     }
 }
