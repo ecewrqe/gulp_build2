@@ -1,0 +1,133 @@
+{
+    "config": {
+        "debug": true,
+        "data":{
+            "app": "BeauAdmin",
+            "app-name": "BeauAdmin WebApp",
+            "app-flaver": "BeauAdmin WebApp",
+            "user": "Alucado",
+            "email": "",
+            "twitter": "",
+            "avatar": "",
+            "version": "1.0.0",
+            "logo": "logo.png",
+            "copyright": ""
+        },
+        "compile": {
+            "jsUglify": false,
+            "cssMinify": false,
+            "jsSourcemaps": false,
+            "cssSourcemaps": false,
+            "autoprefixer": false,
+            "seedOnly": false,
+            "rtl": false
+        },
+        "path": {
+            "src": "./src",
+            "node_modules": "./node_modules",
+            "exportPath": "./src/template/include/_nav.hbs",
+            "outputPath": "./src/template/include"
+        },
+        "dist": {
+            "theme": {
+                "path": "./dist"
+            }
+        }
+    },
+    "build": {
+        "vendors": {
+            "base": {
+                "src": {
+                    "required": {
+                        "jquery": {
+                            "scripts": [
+                                "{$config.path.node_modules}/jquery/dist/jquery.js"
+                            ]
+                        },
+                        "bootstrap": {
+                            "styles": [
+                                "{$config.path.src}/scss/bootstrap.scss"
+                            ],
+                            "scripts": [
+                                "{$config.path.node_modules}/popper.js/dist/umd/popper.js",
+                                "{$config.path.node_modules}/bootstrap/dist/js/bootstrap.js"
+                            ]
+                        },
+                        "webfonts": {
+                            "styles": [
+								"{$config.path.src}/scss/app.icons.scss"
+							],
+                            "fonts": [
+                                "{$config.path.src}/custom/webfonts/fontawesome-pro-master/webfonts/**",
+                                "{$config.path.src}/custom/webfonts/nextgen-fonts-master/webfonts/**",
+                                "{$config.path.src}/custom/webfonts/plugins/summernote/**"
+                                
+                            ]
+                        }
+                    },
+                    "optional": {
+                        "jquery-slimscroll": {
+                            "scripts": [
+                                "{$config.path.node_modules}/jquery-slimscroll/jquery.slimscroll.js"
+                            ]
+                        },
+                        "waves": {
+                            "scripts": [
+                                "{$config.path.node_modules}/node-waves/dist/waves.js"
+                            ]
+                        },
+                        "smartpanels": {},
+                        "app-images": {
+                            "images": [
+                                "{$config.path.src}/img/**"
+                            ]
+                        },
+                        "app-data": {
+                            "json": [
+                                "{$config.path.src}/custom/webfonts/fontawesome-pro-master/used-for-demo-pages/*.json",
+								"{$config.path.src}/custom/webfonts/nextgen-fonts-master/used-for-demo-pages/*.json",
+                                "{$config.path.src}/data/**"
+                            ]
+                        },
+                        "app-media": {
+                            "media": [
+                            ]
+                        }
+
+                    }
+                },
+                "bundle": {
+                    "styles": "{$config.output}/css/vendors.bundle.css",
+                    "scripts": "{$config.output}/js/vendors.bundle.js",
+                    "images": "{$config.output}/img",
+                    "fonts": "{$config.output}/webfonts",
+                    "json": "{$config.output}/media/data",
+                    "media": "{$config.output}/media"
+                }
+            },
+            "custom": {
+                "fontawesome": {
+					
+				}
+            }
+            
+        },
+        "app": {
+            "base": {
+                "src": {
+                    "styles": [
+                        "{$config.path.src}/scss/entry.scss"
+                    ],
+                    "scripts": [
+                        "{$config.path.src}/js/entry.js"
+                    ]
+                },
+                "bundle": {
+                    "styles": "{$config.output}/css/app.bundle.css",
+                    "scripts": "{$config.output}/js/app.bundle.js"
+                }
+            },
+            "custom": {}
+        }
+    }
+}

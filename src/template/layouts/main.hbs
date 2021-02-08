@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{> include/_head}}
+
+        {{#>styles-block}}
+            <!---->
+        {{/styles-block}}
+    </head>
+    <body>
+
+        {{#>content-block}}{{/content-block}}
+
+        {{> include/_script-base-plugins }}
+        
+        {{#>scripts-block}}
+            <!-- Custom scripts per page can be added -->
+        {{/scripts-block}}
+    </body>
+</html>

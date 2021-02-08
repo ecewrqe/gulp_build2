@@ -1,0 +1,26 @@
+{{#>
+    layouts/main
+
+}}
+{{#*inline "content-block"}}
+<h1>hello world</h1>
+<p>{{user}}</p>
+<button class="btn btn-primary">btn</button>
+<div class="dropdown">
+    <div class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="dw01" >dropdown</div>
+    <ul id="dw01" class="dropdown-menu">
+        <li>
+            <a href="#" class="dropdown-item">action
+                <i class="ni ni-action-undo"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+{{/inline}}
+
+{{#*inline "scripts-block"}}
+
+{{/inline}}
+
+{{/layouts/main}}
+
