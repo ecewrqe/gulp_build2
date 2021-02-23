@@ -1,21 +1,66 @@
 {{#>
     layouts/main
-
+    a=20
 }}
+
 {{#*inline "content-block"}}
-<h1>hello world</h1>
-<p>{{user}}</p>
-<button class="btn btn-primary">btn</button>
-<div class="dropdown">
-    <div class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="dw01" >dropdown</div>
-    <ul id="dw01" class="dropdown-menu">
-        <li>
-            <a href="#" class="dropdown-item">action
-                <i class="ni ni-action-undo"></i>
-            </a>
-        </li>
-    </ul>
+{{#toc}}
+<!-- toc -->
+{{#markdown}}
+## label
+<div class="alert alert-default">alert danger</div>
+<div class="alert alert-primary">
+    <div class="alert-heading">
+        <strong>heading</strong> name
+    </div>
+    alert primary
+    <span class="badge badge-danger">new</span>
 </div>
+<div class="alert alert-secondary alert-dismissible">
+    <div class="alert-heading">
+        <strong>heading</strong> name
+    </div>
+    alert secondary
+    <button type="button" class="close" data-dismiss="alert" data-label="Close">
+        <i class="fal fa-times"></i>
+    </button>
+
+</div>
+<div class="alert alert-info alert-dismissible">alert info
+    <button type="button" class="close" data-dismiss="alert" data-label="Close">
+        <i class="fal fa-times"></i>
+    </button>
+</div>
+<div class="alert alert-sm alert-success alert-dismissible fade show" role="alert">
+    alert success
+    <button type="button" class="close" data-dismiss="alert" data-label="Close">
+        <i class="fal fa-times"></i>
+    </button>
+</div>
+<div class="alert alert-warning">alert warning</div>
+<div class="alert alert-radius-clear alert-dark">alert warning
+    <i class="fab fa-weixin"></i>
+    <i class="fab fa-weibo"></i>
+    <i class="fab fa-qq"></i>
+</div>
+<p style="width: 100px; border: 1px solid black" class="text-wrap text-lg-right text-capitalize text-white-50 font-weight-normal">test wraptest wraptest wraptest wraptest wraptest wrap</p>
+<a href="#" class="">aaa</a>
+## badge
+<h1>this is a badge <span class="badge badge-danger box_heavy_1 rounded-top"> </span></h1>
+<h2>this is a badge <span class="badge badge-success box_heavy_2">badge</span></h2>
+<h3>this is a badge <span class="badge badge-warning rounded-3"> badge</span></h3>
+<h4>this is a badge ===4 <span class="badge badge-info rounded-pill visibility_collapse">badge</span></h4>
+<span class="badge badge-primary">primary</span>
+<a href="javascript:void(0)" class="badge badge-danger">danger</a>
+<a href="javascript:void(0)" class="btn">button1 <span class="badge badge-point">12</span></a>
+<button class="status status-primary px-4 pl-4">this is a badge button</button>
+<button class="status status-danger">this is a badge button</button>
+
+
+{{/markdown}}
+
+
+{{/toc}}
 {{/inline}}
 
 {{#*inline "scripts-block"}}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            abcd
+        </title>
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+        <!-- Call App Mode on ios devices -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- Remove Tap Highlight on Windows Phone IE -->
+        <meta name="msapplication-tap-highlight" content="no">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <!-- base css -->
+        <link rel="stylesheet" media="screen, print" href="css/vendors.bundle.css">
+        <link rel="stylesheet" media="screen, print" href="css/fontawesome_light.css">
+        <link rel="stylesheet" media="screen, print" href="css/app.bundle.css">
+        <!---->
+    </head>
+    <body>
+        <div class="toc">
+            <ul>
+                <li><a href="#text">text</a></li>
+                <li><a href="#">日本語；これは一番きれい言葉</a></li>
+                <li><a href="#-1">中文：这是最好的说话</a></li>
+                <li><a href="#button">button:</a></li>
+                <li><a href="#button-size">button size</a></li>
+                <li><a href="#button-group">button group</a></li>
+            </ul>
+        </div>
+        <h1>reboot</h1>
+        <h2><a href="#text" name="text">text</a></h2>
+        <p>roma: english is a variable language</p>
+        <h2><a href="#" name="">日本語；これは一番きれい言葉</a></h2>
+        <h2><a href="#-1" name="-1">中文：这是最好的说话</a></h2>
+        <p>link:<br>
+            default: color, underline<br>
+            hover: color, underline, displace, outline<br>
+            active: color, underline, displace, outline<br>
+            focus: color, underline</p>
+        <div>
+            <a href="javascript:;" class="link">default link</a>
+            <a href="javascript:;" class="link link-brown link-active-warning">blue link</a>
+            <a href="javascript:;" class="link-1 link-primary">link underline when hover</a>
+            <a href="javascript:;" class="link link-primary link-displace">link underline and displace</a>
+            <a href="javascript:;" class="link-1 link-primary link-hover-warning">link underline and change color when hover</a>
+            <a href="javascript:;" class="link link-primary link-active-danger">blue active link</a>
+            <button class="btn btn-primary btn-lg">button</button>
+            <button class="btn-1 btn-displace btn-inset">btn displace inset danger</button>
+            <button class="btn-1 btn-warning btn-outset ">btn outset danger</button>
+            <button class="btn-1 btn-inset">btn inset danger</button>
+            <button class="btn-2">btn 2</button>
+            <button class="btn-1 btn-default btn-inset">btn success</button>
+            <button class="btn-1 btn-success btn-active-info btn-inset">btn success</button>
+            <button class="btn-1 btn-success btn-hover-danger btn-outset">btn hover danger</button>
+            <button class="btn-1 btn-success btn-active-warning btn-outset">btn hover danger</button>
+            <button class="btn-2 btn-success btn-active-danger btn-inset active">btn success active</button>
+            <button class="btn-2 btn-success disabled">btn success disabled</button>
+            <button class="btn-2 btn-success btn-outset">btn success</button>
+            <button class="btn-1 btn-outline-success">btn outline success</button>
+            <button class="btn-1 btn-outline-success btn-hover-success btn-inset">btn inset success</button>
+        </div>
+        <p>link-1, default: no underline, hover: no underline, active: no underline, focus: no underline<br>
+            link-2, default: no underline, hover: underline, active underline, focus: no underline<br>
+            link-3, default: no underline, hover: underline, active underline displace, focus: no underline<br>
+            link-4, default: no underline, hover: no underline, active: no underline displace, focus: no underline</p>
+        <p>link-1, link-primary, link-active-danger, link-hover-danger, link-focus-primary</p>
+        <h2><a href="#button" name="button">button:</a></h2>
+        <p>default: color{full, border}, shadow, border-radius, size{lg, sm, xs}<br>
+            hover: color{full, border}, shadow{outside, no}<br>
+            active: color{full, border}, shadow{inside, no}, displace{no}<br>
+            focus: color{full, border}, shadow{outside, no}, displace{no}<br>
+            default active, toggle button, refresh button<br>
+            wave effect</p>
+        <p>btn=&gt;no border</p>
+        <p>btn btn-primary (focus: no outline)<br>
+            btn btn-primary btn-inside =&gt; btn-1 btn-primary<br>
+            btn btn-primary btn-displace =&gt; btn-2 btn-primary</p>
+        <p>btn btn-border-primary =&gt; btn-border-1 btn-primary btn-inside<br>
+            btn btn-border-primary btn-hover-primary=&gt;btn-border-2 btn-primary btn-displace<br>
+            btn btn-border-primary btn-active-primary =&gt; btn-border-3 btn-primary<br>
+            btn-round</p>
+        <h2><a href="#button-size" name="button-size">button size</a></h2>
+        <button class="btn btn-primary btn-lg">btn</button>
+        <button class="btn btn-primary">btn</button>
+        <button class="btn btn-default btn-sm btn-displace btn-inset-reverse pl-4 pr-4 pt-2">btn</button>
+        <h2><a href="#button-group" name="button-group">button group</a></h2>
+        <button class="button">
+            btn-wave
+        </button>
+        <!-- base vendor bundle:
+             if you remove pace.js from core please note on Internet Explorer some CSS animation may execute before a page is fully loaded, resulting 'jump' animations
+                            + pace.js (recommanded)
+                            + jquery.js (core)
+                            + jquery-ui-cust.js (core)
+                            + popper.js (core)
+                            + bootstrap.js (core)
+                            + slimscroll.js (extension)
+                            + app.navigation.js (core)
+                            + ba-throttle-debounce.js (core)
+                            + waves.js(extension)
+                            + smartpanels.js (extension)
+                            + src/../jquery-snippets.js (core) -->
+        <script src="js/vendors.bundle.js"></script>
+        <script src="js/app.bundle.js"></script>
+        <script src="./js/node-waves.js"></script>
+        <script type="text/javascript">
+            Waves.attach('.button', ['waves-button', 'waves-float']);
+            Waves.init();
+
+        </script>
+    </body>
+</html>

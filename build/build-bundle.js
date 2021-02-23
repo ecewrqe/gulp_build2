@@ -13,11 +13,12 @@ var args = Object.assign({
 
 gulp.task('build-bundle', function(done){
     console.log('==============> Generating bundles...');
-    
+
+
+
     // bundle & src
     func.objectBuildTree(build.build, function(val){
         if(typeof val.src !== 'undefined' && typeof val.bundle !== 'undefined'){
-            
             func.bundle(val);
         }
     });

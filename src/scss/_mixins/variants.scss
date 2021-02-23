@@ -1,0 +1,77 @@
+// link variant
+@mixin _link-variant($value){
+  color: $value;
+  &:hover{
+    color: $value;
+  }
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active{
+    color: $value;
+  }
+  &:focus {
+    color: $value;
+  }
+}
+
+@mixin _link-hover-variant($value){
+  &:hover{
+    color: $value !important;
+  }
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active{
+    color: $value !important;
+  }
+}
+
+@mixin _link-active-variant($value){
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active{
+    color: $value !important;
+  }
+}
+
+// button variant
+@mixin _button-variant($value){
+  background-color: $value;
+  color: color-yiq(darken($value, 20%));
+  border: 0.25px solid darken($value, 5%);
+  &:hover, &:focus{
+    background-color: $value;
+    color: color-yiq(darken($value, 20%)) !important;
+  }
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active{
+    background-color: darken($value, 10%);
+    color: color-yiq(darken($value, 20%));
+    border: 0.25px solid darken($value, 15%);
+    box-shadow: none;
+  }
+}
+
+
+
+@mixin _button-hover-variant($value){
+  &:hover{
+    background-color: $value !important;
+    color: color-yiq(darken($value, 20%)) !important;
+    border: 0.25px solid darken($value, 5%);
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active{
+    background-color: darken($value, 10%);
+    color: color-yiq(darken($value, 10%));
+    border: 0.25px solid darken($value, 15%);
+    box-shadow: none;
+  }
+}
+
+@mixin _button-active-variant($value){
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active{
+    background-color: darken($value, 10%) !important;
+    color: color-yiq(darken($value, 20%)) !important;
+    border: 0.25px solid darken($value, 15%) !important;
+    box-shadow: none;
+  }
+}

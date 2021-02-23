@@ -25,6 +25,17 @@
   * awesomefont-pro
   * nextgen-fonts
 
+### 新功能
+* 可以进行对es6语法的转换
+build.json->`compile:{"babelify": true}`
+
+toc, markdown插件，可在handlebars文档中插入markdown，渲染成html
+
+
+### bootstrap css样式整理和改造
+- alert
+- button
+- badge
 
 
 

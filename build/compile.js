@@ -11,10 +11,18 @@ var rewrite = require('gulp-rewrite-css');
 var sassGlob = require('gulp-sass-glob');
 var livereload  = require('gulp-livereload');
 var sass = require('gulp-sass');
+var browserify = require('browserify');
+var babelify = require('babelify');
+var tsify = require('tsify');
+
+var source = require('vinyl-source-stream');
 var concat = require('gulp-concat');
 var prettify = require('gulp-prettify');
 var gutil = require('gulp-util');
 var build = require('./build');
+
+var coffeeify = require('coffeeify');
+
 var path = require('path');
 
 var fs = require('fs');
@@ -24,6 +32,18 @@ var args = Object.assign({
 
 module.exports = {
     config: Object.assign({}, {
+        "compile": {
+            "jsUglify": false,
+            "cssMinify": false,
+            "jsSourcemaps": true,
+            "cssSourcemaps": true,
+            "autoprefixer": true,
+            "seedOnly": false,
+            "rtl": false,
+            "babelify": false,
+            "coffeeify": false,
+            "tsify": false
+        },
         "path": {
             "src": "./src",
             "node_modules": "./node_modules"
@@ -65,7 +85,6 @@ module.exports = {
     },
     jsOutput: function(){
         var config = this.config.compile;
-
         return lazypipe()
             .pipe(function(){
                 return gulpif(config.jsSourcemaps, sourcemaps.init({
@@ -74,6 +93,7 @@ module.exports = {
                 }));
             })
             .pipe(function(){
+
                 return gulpif(config.jsUglify, uglify());
             })
             .pipe(function(){
@@ -265,40 +285,46 @@ module.exports = {
                 }
                 
             }
-            if(!('styles' in bundle.src) && !('scripts' in bundle.src)){
+            if(!('styles' in bundle.src) && !('scripts' in bundle.src)
+                && !('coffee_scripts' in bundle.src) && !('type_scripts' in bundle.src)){
                 var src = {
                     styles: [],
-                    scripts: []
+                    scripts: [],
+                    coffee_scripts: [],
+                    type_scripts: []
                 };
                 _self.objectBuildTree(bundle.src, function(paths, type){
                     switch(type) {
                         case 'styles':
                         case 'scripts':
                             src[type] = src[type].concat(paths);
-                            break;
+                        case 'coffee_scripts':
+                            src[type] = src[type].concat(paths);
+                        case 'type_scripts':
+                            src[type] = src[type].concat(paths);
                     }
                 });
                 
                 bundle.src = src;
                 
             }
-            
 
 
-            
+
 
             for (var type in bundle.src){
                 if(!bundle.src.hasOwnProperty(type)) continue;
                 if(Object.prototype.toString.call(bundle.src[type]) !== '[object Array]') continue;
-                if(typeof bundle.bundle[type] === 'undefined') continues;
+                if(typeof bundle.bundle[type] === 'undefined') continue;
                 _self.streamPaths(bundle.src[type]);
                 var outputFile = _self.baseName(bundle.bundle[type]);
 
                 if(bundle.src[type].length != 0){
-                    
+
                     switch(type){
-                        
+
                         case 'styles':
+                            console.log("style")
                             gulp.src(bundle.src[type])
                                 .pipe(_self.cssRewritePaths(bundle.bundle[type])())
                                 .pipe(concat(outputFile))
@@ -308,20 +334,58 @@ module.exports = {
                                     errLogToConsole: true
                                 }).on('error', sass.logError))
                                 .pipe(_self.cssOutput()())
-                                .pipe(_self.outputStream(bundle.bundle[type], outputFile)());
-                                
-                            break;
-                        case 'scripts':
-                            gulp.src(bundle.src[type])
-                                .pipe(concat(outputFile))
-                                .pipe(_self.jsOutput()())
                                 .pipe(_self.outputStream(bundle.bundle[type], outputFile)())
                                 .pipe(livereload());
+
+                            break;
+                        case 'scripts':
+                            if(_self.config.compile.babelify === true){
+
+                                browserify(bundle.src[type])
+                                    .transform(babelify)
+                                    .bundle()
+                                    .pipe(source(outputFile))
+                                    .pipe(_self.jsOutput()())
+                                    .pipe(_self.outputStream(bundle.bundle[type], outputFile)())
+                                    .pipe(livereload());
+                            }else{
+                                gulp.src(bundle.src[type])
+                                    .pipe(concat(outputFile))
+                                    .pipe(_self.jsOutput()())
+                                    .pipe(_self.outputStream(bundle.bundle[type], outputFile)())
+                                    .pipe(livereload());
+                            }
+                            break;
+                        case 'coffee_scripts':
+                            if(_self.config.compile.coffeeify === true){
+
+                                browserify(bundle.src[type])
+                                    .transform(coffeeify)
+                                    .bundle()
+                                    .pipe(source(outputFile))
+                                    .pipe(_self.jsOutput()())
+                                    .pipe(_self.outputStream(bundle.bundle[type], outputFile)())
+                                    .pipe(livereload());
+                            }
+                            break;
+                        case 'type_scripts':
+
+                            if(_self.config.compile.tsify === true){
+
+                                browserify(bundle.src[type])
+                                    .plugin(tsify)
+                                    .bundle()
+                                    .pipe(source(outputFile))
+                                    .pipe(_self.jsOutput()())
+                                    .pipe(_self.outputStream(bundle.bundle[type], outputFile)())
+                                    .pipe(livereload());
+                            }
+                            break;
                         default:
                             break;
                     }
                 }
-                
+
             }
         }
         return tasks;

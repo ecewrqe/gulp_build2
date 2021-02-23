@@ -12,25 +12,75 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <!-- Remove Tap Highlight on Windows Phone IE -->
         <meta name="msapplication-tap-highlight" content="no">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
         <!-- base css -->
-        <link id="vendorsbundle" rel="stylesheet" media="screen, print" href="css/vendors.bundle.css">
-        <link id="appbundle" rel="stylesheet" media="screen, print" href="css/app.bundle.css">
+        <link rel="stylesheet" media="screen, print" href="css/vendors.bundle.css">
+        <link rel="stylesheet" media="screen, print" href="css/fontawesome_light.css">
+        <link rel="stylesheet" media="screen, print" href="css/app.bundle.css">
         <!---->
     </head>
     <body>
-        <h1>hello world</h1>
-        <p></p>
-        <button class="btn btn-primary">btn</button>
-        <div class="dropdown">
-            <div class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="dw01">dropdown</div>
-            <ul id="dw01" class="dropdown-menu">
-                <li>
-                    <a href="#" class="dropdown-item">action
-                        <i class="ni ni-action-undo"></i>
-                    </a>
+        <div class="toc">
+            <ul>
+                <li><a href="#label">label</a></li>
+                <li><a href="#this-is-a-badge-badge">this is a badge badge</a>
+                    <ul>
+                        <li><a href="#this-is-a-badge-badge-1">this is a badge badge</a>
+                            <ul>
+                                <li><a href="#this-is-a-badge-4-badge">this is a badge ===4 badge</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
+        <h2><a href="#label" name="label">label</a></h2>
+        <div class="alert alert-default">alert danger</div>
+        <div class="alert alert-primary">
+            <div class="alert-heading">
+                <strong>heading</strong> name
+            </div>
+            alert primary
+            <span class="badge badge-danger">new</span>
+        </div>
+        <div class="alert alert-secondary alert-dismissible">
+            <div class="alert-heading">
+                <strong>heading</strong> name
+            </div>
+            alert secondary
+            <button type="button" class="close" data-dismiss="alert" data-label="Close">
+                <i class="fal fa-times"></i>
+            </button>
+        </div>
+        <div class="alert alert-info alert-dismissible">alert info
+            <button type="button" class="close" data-dismiss="alert" data-label="Close">
+                <i class="fal fa-times"></i>
+            </button>
+        </div>
+        <div class="alert alert-sm alert-success alert-dismissible fade show" role="alert">
+            alert success
+            <button type="button" class="close" data-dismiss="alert" data-label="Close">
+                <i class="fal fa-times"></i>
+            </button>
+        </div>
+        <div class="alert alert-warning">alert warning</div>
+        <div class="alert alert-radius-clear alert-dark">alert warning
+            <i class="fab fa-weixin"></i>
+            <i class="fab fa-weibo"></i>
+            <i class="fab fa-qq"></i>
+        </div>
+        <p style="width: 100px; border: 1px solid black" class="text-wrap text-lg-right text-capitalize text-white-50 font-weight-normal">test wraptest wraptest wraptest wraptest wraptest wrap</p>
+        <a href="#" class="">aaa</a>
+        ## badge
+        <h1>this is a badge <span class="badge badge-danger box_heavy_1 rounded-top"> </span></h1>
+        <h2><a href="#this-is-a-badge-badge" name="this-is-a-badge-badge">this is a badge <span class="badge badge-success box_heavy_2">badge</span></a></h2>
+        <h3><a href="#this-is-a-badge-badge-1" name="this-is-a-badge-badge-1">this is a badge <span class="badge badge-warning rounded-3"> badge</span></a></h3>
+        <h4><a href="#this-is-a-badge-4-badge" name="this-is-a-badge-4-badge">this is a badge ===4 <span class="badge badge-info rounded-pill visibility_collapse">badge</span></a></h4>
+        <span class="badge badge-primary">primary</span>
+        <a href="javascript:void(0)" class="badge badge-danger">danger</a>
+        <a href="javascript:void(0)" class="btn">button1 <span class="badge badge-point">12</span></a>
+        <button class="status status-primary px-4 pl-4">this is a badge button</button>
+        <button class="status status-danger">this is a badge button</button>
         <!-- base vendor bundle:
              if you remove pace.js from core please note on Internet Explorer some CSS animation may execute before a page is fully loaded, resulting 'jump' animations
                             + pace.js (recommanded)

@@ -1,0 +1,107 @@
+{{#>
+layouts/main
+        a=20
+}}
+{{#>styles-block}}
+    <link rel="stylesheet" href="./css/node-waves.css" />
+{{/styles-block}}
+{{#*inline "content-block"}}
+
+{{#toc}}
+<!-- toc -->
+{{#markdown}}
+# reboot
+## text
+
+roma: english is a variable language
+## 日本語；これは一番きれい言葉
+## 中文：这是最好的说话
+link:
+    default: color, underline
+    hover: color, underline, displace, outline
+    active: color, underline, displace, outline
+    focus: color, underline
+<div>
+<a href="javascript:;" class="link">default link</a>
+<a href="javascript:;" class="link link-brown link-active-warning">blue link</a>
+<a href="javascript:;" class="link-1 link-primary">link underline when hover</a>
+<a href="javascript:;" class="link link-primary link-displace">link underline and displace</a>
+<a href="javascript:;" class="link-1 link-primary link-hover-warning">link underline and change color when hover</a>
+<a href="javascript:;" class="link link-primary link-active-danger">blue active link</a>
+
+
+<button class="btn btn-primary btn-lg">button</button>
+
+<button class="btn-1 btn-displace btn-inset">btn displace inset danger</button>
+<button class="btn-1 btn-warning btn-outset ">btn outset danger</button>
+<button class="btn-1 btn-inset">btn inset danger</button>
+<button class="btn-2">btn 2</button>
+<button class="btn-1 btn-default btn-inset">btn success</button>
+<button class="btn-1 btn-success btn-active-info btn-inset">btn success</button>
+<button class="btn-1 btn-success btn-hover-danger btn-outset">btn hover danger</button>
+<button class="btn-1 btn-success btn-active-warning btn-outset">btn hover danger</button>
+<button class="btn-2 btn-success btn-active-danger btn-inset active">btn success active</button>
+<button class="btn-2 btn-success disabled">btn success disabled</button>
+<button class="btn-2 btn-success btn-outset">btn success</button>
+
+<button class="btn-1 btn-outline-success">btn outline success</button>
+<button class="btn-1 btn-outline-success btn-hover-success btn-inset">btn inset success</button>
+</div>
+
+
+
+link-1, default: no underline, hover: no underline, active: no underline, focus: no underline
+link-2, default: no underline, hover: underline, active underline, focus: no underline
+link-3, default: no underline, hover: underline, active underline displace, focus: no underline
+link-4, default: no underline, hover: no underline, active: no underline displace, focus: no underline
+
+link-1, link-primary, link-active-danger, link-hover-danger, link-focus-primary
+
+
+
+## button:
+default: color{full, border}, shadow, border-radius, size{lg, sm, xs}
+hover: color{full, border}, shadow{outside, no}
+active: color{full, border}, shadow{inside, no}, displace{no}
+focus: color{full, border}, shadow{outside, no}, displace{no}
+default active, toggle button, refresh button
+wave effect
+
+btn=>no border
+
+btn btn-primary (focus: no outline)
+btn btn-primary btn-inside => btn-1 btn-primary
+btn btn-primary btn-displace => btn-2 btn-primary
+
+btn btn-border-primary => btn-border-1 btn-primary btn-inside
+btn btn-border-primary btn-hover-primary=>btn-border-2 btn-primary btn-displace
+btn btn-border-primary btn-active-primary => btn-border-3 btn-primary
+btn-round
+## button size
+<button class="btn btn-primary btn-lg">btn</button>
+<button class="btn btn-primary">btn</button>
+<button class="btn btn-default btn-sm btn-displace btn-inset-reverse pl-4 pr-4 pt-2">btn</button>
+
+## button group
+
+<button class="button">
+    btn-wave
+</button>
+
+
+
+{{/markdown}}
+
+        {{/toc}}
+    {{/inline}}
+
+{{#*inline "scripts-block"}}
+<script src="./js/node-waves.js"></script>
+<script type="text/javascript">
+    Waves.attach('.button', ['waves-button', 'waves-float']);
+    Waves.init();
+</script>
+{{/inline}}
+
+{{/layouts/main}}
+

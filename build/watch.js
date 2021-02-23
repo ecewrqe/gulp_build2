@@ -10,7 +10,11 @@ gulp.task('watch', function (done) {
 
     // watch `.hbs` changes and compile new pages
     gulp.watch(
-        [build.config.path.src + '/**/*.hbs'], 
+        [
+            build.config.path.src + '/**/*.hbs',
+            build.config.path.src + '/template/**/*.hbs',
+            build.config.path.src + '/template/**/*.js'
+        ],
         gulp.series('build-html'))
         .on('change', function(event){
             var file = path.parse(event);
@@ -18,8 +22,10 @@ gulp.task('watch', function (done) {
         });
     // watch `.js` changes & avoiding `.min.js`
     gulp.watch(
-        [build.config.path.src + '/**/*.js', 
-        build.config.path.src + '/**/*.scss']
+        [build.config.path.src + '/js/**/*.js',
+            build.config.path.src + '/js/**/*.ts',
+            build.config.path.src + '/js/**/*.coffee',
+            build.config.path.src + '/scss/**/*.scss']
         , gulp.series('build-bundle'))
         .on('change', function(event){
             var file = path.parse(event);

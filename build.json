@@ -1,7 +1,7 @@
 {
     "config": {
         "debug": true,
-        "data":{
+        "data": {
             "app": "Demo",
             "app-name": "Demo"
         },
@@ -12,7 +12,18 @@
             "cssSourcemaps": false,
             "autoprefixer": false,
             "seedOnly": false,
-            "rtl": false
+            "rtl": false,
+            "babelify": false,
+            "coffeeify": false,
+            "tsify": false
+        },
+        "markdown_toc": {
+            "header": "<h<%= level %><%= attrs %>><%= header %></h<%= level %>>",
+            "openUL": "<ul>",
+            "closeUL": "</ul>",
+            "openLI": "<li><a href=\"#<%= anchor %>\"><%= text %></a>",
+            "closeLI": "</li>",
+            "TOC": "<div class=\"toc\"><%= toc %></div>"
         },
         "path": {
             "src": "./src",
@@ -45,30 +56,24 @@
                                 "{$config.path.node_modules}/bootstrap/dist/js/bootstrap.js"
                             ]
                         },
-                        "webfonts": {
+                        "highlight": {
                             "styles": [
-								"{$config.path.src}/scss/app.icons.scss"
-							],
+                                "{$config.path.node_modules}/highlight.js/styles/default.css"
+                            ],
+                            "scripts": [
+                                "{$config.path.src}/custom/plugins/highlight.js/highlight.pack.js"
+                            ]
+                        },
+                        "webfonts": {
+
                             "fonts": [
-                                "{$config.path.src}/custom/webfonts/fontawesome-pro-master/webfonts/**",
-                                "{$config.path.src}/custom/webfonts/nextgen-fonts-master/webfonts/**",
-                                "{$config.path.src}/custom/webfonts/plugins/summernote/**"
-                                
+                                "{$config.path.src}/custom/webfonts/fontawesome-pro-master/webfonts/**"
+
                             ]
                         }
                     },
                     "optional": {
-                        "jquery-slimscroll": {
-                            "scripts": [
-                                "{$config.path.node_modules}/jquery-slimscroll/jquery.slimscroll.js"
-                            ]
-                        },
-                        "waves": {
-                            "scripts": [
-                                "{$config.path.node_modules}/node-waves/dist/waves.js"
-                            ]
-                        },
-                        "smartpanels": {},
+
                         "app-images": {
                             "images": [
                                 "{$config.path.src}/img/**"
@@ -77,13 +82,11 @@
                         "app-data": {
                             "json": [
                                 "{$config.path.src}/custom/webfonts/fontawesome-pro-master/used-for-demo-pages/*.json",
-								"{$config.path.src}/custom/webfonts/nextgen-fonts-master/used-for-demo-pages/*.json",
                                 "{$config.path.src}/data/**"
                             ]
                         },
                         "app-media": {
-                            "media": [
-                            ]
+                            "media": []
                         }
 
                     }
@@ -95,6 +98,46 @@
                     "fonts": "{$config.output}/webfonts",
                     "json": "{$config.output}/media/data",
                     "media": "{$config.output}/media"
+                }
+            }
+        },
+        "plugins": {
+            "fontawesome_light": {
+                "src": {
+                    "styles": [
+                        "{$config.path.src}/custom/webfonts/fontawesome-pro-master/scss/light.scss"
+                    ]
+                },
+                "bundle": {
+                    "styles": "{$config.output}/css/fontawesome_light.css"
+                }
+            },
+            "fontawesome_brands": {
+                "src": {
+                    "styles": [
+                        "{$config.path.src}/custom/webfonts/fontawesome-pro-master/scss/fontawesome.scss",
+                        "{$config.path.src}/custom/webfonts/fontawesome-pro-master/scss/light.scss",
+                        "{$config.path.src}/custom/webfonts/fontawesome-pro-master/scss/brands.scss",
+                        "{$config.path.src}/custom/webfonts/fontawesome-pro-master/scss/regular.scss",
+                        "{$config.path.src}/custom/webfonts/fontawesome-pro-master/scss/solid.scss"
+                    ]
+                },
+                "bundle": {
+                    "styles": "{$config.output}/css/fontawesome_light.css"
+                }
+            },
+            "node-wave": {
+                "src": {
+                    "styles": [
+                        "{$config.path.node_modules}/node-waves/dist/waves.css"
+                    ],
+                    "scripts": [
+                        "{$config.path.node_modules}/node-waves/dist/waves.js"
+                    ]
+                },
+                "bundle": {
+                    "styles": "{$config.output}/css/node-waves.css",
+                    "scripts": "{$config.output}/js/node-waves.js"
                 }
             }
         },
@@ -111,6 +154,22 @@
                 "bundle": {
                     "styles": "{$config.output}/css/app.bundle.css",
                     "scripts": "{$config.output}/js/app.bundle.js"
+                }
+            },
+            "coffee": {
+                "src": {
+                    "coffee_scripts": ["{$config.path.src}/js/another.coffee"]
+                },
+                "bundle": {
+                    "coffee_scripts": "{$config.output}/js/coffee.bundle.js"
+                }
+            },
+            "typescripts": {
+                "src": {
+                    "type_scripts": ["{$config.path.src}/js/another.ts"]
+                },
+                "bundle": {
+                    "type_scripts": "{$config.output}/js/type.bundle.js"
                 }
             }
         }

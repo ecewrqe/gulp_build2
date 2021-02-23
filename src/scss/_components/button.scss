@@ -1,0 +1,176 @@
+
+
+.link{
+  color: $link-color;
+  &:hover{
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active{
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+  &:focus {
+    color: $link-color;
+  }
+}
+
+.link-1{
+  @extend .link;
+  &:hover{
+    text-decoration: underline;
+  }
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active{
+    text-decoration: underline;
+  }
+}
+
+.link-displace:active, .link-displace.active{
+  position: relative;
+  bottom: -2px;
+}
+
+// link
+
+
+@each $color, $value in $theme-colors {
+  .link-#{$color}{
+    @include _link-variant($value)
+  }
+  .link-hover-#{$color}{
+    @include _link-hover-variant($value)
+  }
+  .link-active-#{$color}{
+    @include _link-active-variant($value)
+  }
+
+}
+
+
+
+
+.btn{
+  &:focus{
+    @include _box-shadow(none);
+  }
+}
+.btn-1{
+  display: inline-block;
+  font-weight: 400;
+  color: $body-color;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  @include user-select(none);
+  background-color: $btn-bg;
+
+  border: $btn-border-width solid transparent;
+  padding: $btn-padding-y $btn-padding-x;
+  font-size: $font-size-base;
+  border-radius: $border-radius;
+  line-height: $line-height-base;
+
+
+
+  &:hover{
+    text-decoration: none;
+    color: $body-color;
+  }
+
+  &:focus, &.focus{
+    outline: 0;
+    box-shadow: none;
+  }
+
+  &:disabled, &.disabled{
+    opacity: 0.65;
+    @include box-shadow(none);
+    cursor: default;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active{
+    background-color: $btn-bg-active;
+    color: color-yiq($btn-bg-active);
+  }
+}
+
+.btn-2{
+  border: $btn-border;
+  @extend .btn-1;
+}
+
+a.btn-1, a.btn-2{
+  pointer-events: none;
+}
+
+.btn-inset:active, .btn-inset.active{
+  @include _box-shadow($btn-inset-shadow !important) ;
+}
+
+.btn-inset-reverse:active, .btn-inset-reverse.active{
+  @include _box-shadow($btn-inset-reverse-shadow !important);
+}
+
+.btn-outset{
+  @include _box-shadow( $btn-outset-shadow);
+
+  &:focus{
+
+    @include _box-shadow( $btn-outset-shadow);
+  }
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active{
+    position: relative;
+    bottom: -2px;
+    background-color: $btn-bg-active;
+    color: color-yiq($btn-bg-active);
+    @include _box-shadow( none);
+  }
+}
+
+.btn-displace:active, .btn-displace.active{
+  position: relative;
+  bottom: -2px;
+}
+
+
+
+
+@each $color, $value in $theme-colors {
+  .btn.btn-#{$color}, .btn-1.btn-#{$color}, .btn-2.btn-#{$color}{
+    @include _button-variant(theme-color-level($color, $btn-bg-level))
+  }
+  .btn-hover-#{$color}{
+    @include _button-hover-variant(theme-color-level($color, $btn-bg-level))
+  }
+  .btn-active-#{$color}{
+    @include _button-active-variant(theme-color-level($color, $btn-bg-level))
+  }
+  .btn.btn-outline-#{$color}, .btn-1.btn-outline-#{$color}, .btn-2.btn-outline-#{$color}{
+    border: 0.5px solid theme-color-level($color, $btn-bg-level);
+    @extend .btn-hover-#{$color};
+  }
+}
+
+/* btn widths */
+
+.btn-w-m {
+  min-width: 85px;
+}
+
+.btn-w-l {
+  min-width: 130px;
+}
+
+.btn-m-s {
+  margin: 3px 1px;
+}
+
+.btn-m-l {
+  margin: 3px 2.5px;
+}
+
+/* btn icon */

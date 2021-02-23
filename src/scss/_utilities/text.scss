@@ -1,0 +1,18 @@
+$text-decoration-style: solid, dashed, dotted, double, wavy, revert;
+$text-decoration-line: underline, overline, line-through, blink, overline, inherit;
+
+@each $style in $text-decoration-style {
+  @each $line in $text-decoration-line {
+    .text-decoration_#{$style}_#{$line} {
+      text-decoration-style: $style;
+      text-decoration-line: $line;
+    }
+  }
+}
+
+
+.visible_collapse{
+  visibility: collapse;
+}
+
+

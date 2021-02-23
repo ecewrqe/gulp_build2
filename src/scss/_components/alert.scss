@@ -1,0 +1,41 @@
+$alert-border-level:   -10 !default;
+.alert {
+  .close {
+    padding: 0.9rem 1.25rem;
+    font-weight: $font-weight-bold;
+    &>i{
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+.alert-sm{
+  padding: $alert-padding-y-sm $alert-padding-x-sm !important;
+  .close {
+    padding: 0.6rem 1.25rem;
+    font-weight: $font-weight-bold;
+    &>i{
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+.alert-sm.alert-dismissible {
+  padding-right: $close-font-size + $alert-padding-x * 2;
+
+  // Adjust close link position
+
+}
+
+.alert-heading{
+  padding-bottom: 0.1rem;
+  border-bottom: 0.25px solid;
+
+}
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    @include alert-variant(theme-color-level($color, $alert-border-level), theme-color-level($color, $alert-border-level), theme-color-level($color, $alert-color-level));
+    @include alert-head-border-variant(theme-color-level($color, $alert-border-level));
+  }
+}
