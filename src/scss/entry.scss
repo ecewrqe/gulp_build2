@@ -1,6 +1,9 @@
 @import "./_modules/variables";
 @import "./node_modules/bootstrap/scss/bootstrap";
 
+@import "../custom/webfonts/fontawesome-pro-master/scss/fontawesome.scss";
+
+
 // bootstrap ui
 @import "mixins";
 @import "utilities";

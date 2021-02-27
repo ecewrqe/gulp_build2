@@ -1,20 +1,23 @@
 
 
 .rounded-1{
-  border-radius: 0.25em;
+  border-radius: $rounded-1 !important;
 }
 
 .rounded-2{
-  border-radius: 5em;
+  border-radius: $rounded-2 !important;
 }
 .rounded-3{
-  border-radius: 0.75em;
+  border-radius: $rounded-3 !important;
 }
 .rounded-4{
-  border-radius: 1em;
+  border-radius: $rounded-4 !important;
 }
 .rounded-round{
-  border-radius: 4em;
+  border-radius: $rounded-round !important;
+}
+.rounded-pill{
+  border-radius: $rounded-pill !important;
 }
 
 //.border-radius-lg-top{

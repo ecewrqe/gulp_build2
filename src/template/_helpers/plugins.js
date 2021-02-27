@@ -11,7 +11,6 @@ module.exports.register = function(handlebars) {
         *
         * option.data.markdown_toc*/
             var str = options.fn(this);
-            console.log(options);
             res = toc.process(String(str));
             return res;
         })

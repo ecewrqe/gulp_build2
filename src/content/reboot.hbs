@@ -3,24 +3,85 @@ layouts/main
         a=20
 }}
 {{#>styles-block}}
-    <link rel="stylesheet" href="./css/node-waves.css" />
+    <link rel="stylesheet" href="/css/node-waves.css" />
 {{/styles-block}}
 {{#*inline "content-block"}}
+    <a href="third.html" class="btn btn-primary">下一页 卡片，面板</a>
+<h2>btn-icon</h2>
+<a href="javascript:void(0);" class="btn btn-secondary btn-lg btn-icon waves-effect rounded-circle">
+    <i class="fas fa-spinner fa-pulse"></i>
+</a>
+
+<h2>breadcrumb</h2>
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item" aria-current="page">Library</li>
+    </ol>
+
+    <ol class="breadcrumb breadcrumb-seperator-2">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Can be big as you like</a></li>
+        <li class="breadcrumb-item" aria-current="page">Library</li>
+    </ol>
+
+    <ol class="breadcrumb breadcrumb-arrow">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Can be big as you like</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+
+    <ol class="breadcrumb breadcrumb-sm breadcrumb-arrow">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Second</a></li>
+        <li class="breadcrumb-item"><a href="#">Second</a></li>
+        <li class="breadcrumb-item"><a href="#">Second</a></li>
+        <li class="breadcrumb-item"><a href="#">Second</a></li>
+        <li class="breadcrumb-item"><a href="#">Second</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+</nav>
+
 
 {{#toc}}
+
 <!-- toc -->
 {{#markdown}}
 # reboot
 ## text
+## button wave
 
+
+<button type="button" class="btn btn-primary btn-pills link-displace">Primary</button>
+<button type="button" class="btn btn-secondary btn-pills link-displace">Secondary</button>
+<button type="button" class="btn btn-success btn-pills link-displace">Success</button>
+<button type="button" class="btn btn-info btn-pills link-displace">Info</button>
+<button type="button" class="btn btn-warning btn-pills link-displace">Warning</button>
+<button type="button" class="btn btn-danger btn-pills link-displace">Danger</button>
+<button type="button" class="btn btn-dark btn-pills link-displace">Dark</button>
+<button type="button" class="btn btn-light btn-pills link-displace">Light</button>
 roma: english is a variable language
 ## 日本語；これは一番きれい言葉
 ## 中文：这是最好的说话
+<button type="button" class="btn btn-sm btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-sm btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-sm btn-outline-default">Default</button>
+<button type="button" class="btn btn-sm btn-outline-success">Success</button>
+<button type="button" class="btn btn-sm btn-primary">Warning</button>
+<button type="button" class="btn btn-sm btn-outline-info">Info</button>
+<button type="button" class="btn btn-sm btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-sm btn-outline-dark">Dark</button>
 link:
     default: color, underline
     hover: color, underline, displace, outline
     active: color, underline, displace, outline
     focus: color, underline
+
+
+
+<a href="#" class="btn-1 btn-secondary">a</a>
+<button class="btn-1 btn-secondary">a</button>
+
 <div>
 <a href="javascript:;" class="link">default link</a>
 <a href="javascript:;" class="link link-brown link-active-warning">blue link</a>
@@ -29,6 +90,38 @@ link:
 <a href="javascript:;" class="link-1 link-primary link-hover-warning">link underline and change color when hover</a>
 <a href="javascript:;" class="link link-primary link-active-danger">blue active link</a>
 
+## button group
+<div class="btn-group-vertical" role="group" aria-label="basic example">
+    <button type="button" class="btn btn-primary">left</button>
+    <div class="btn-group">
+        <button type="button" id="grp_btn" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">button</button>
+        <div class="dropdown-menu" aria-labelledby="grp_btn">
+            <a href="#">menu1</a>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary">right</button>
+</div>
+
+<div class="btn-toolbar" role="toolbar" aria-label="toolbar with button group">
+    <div class="btn-group mr-1" role="group" aria-label="basic example">
+        <button type="button" class="btn btn-primary">left</button>
+        <button type="button" class="btn btn-primary">middle</button>
+        <button type="button" class="btn btn-primary">right</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="basic example">
+        <button type="button" class="btn btn-primary">left</button>
+        <button type="button" class="btn btn-primary">middle</button>
+        <button type="button" class="btn btn-primary">right</button>
+    </div>
+</div>
+
+<div class="input-group">
+    <div class="input-group-text">@</div>
+    <input type="text" class="form-control">
+</div>
+
+## button
+----------
 
 <button class="btn btn-primary btn-lg">button</button>
 
@@ -82,11 +175,6 @@ btn-round
 <button class="btn btn-primary">btn</button>
 <button class="btn btn-default btn-sm btn-displace btn-inset-reverse pl-4 pr-4 pt-2">btn</button>
 
-## button group
-
-<button class="button">
-    btn-wave
-</button>
 
 
 
@@ -96,9 +184,8 @@ btn-round
     {{/inline}}
 
 {{#*inline "scripts-block"}}
-<script src="./js/node-waves.js"></script>
+<script src="/js/node-waves.js"></script>
 <script type="text/javascript">
-    Waves.attach('.button', ['waves-button', 'waves-float']);
     Waves.init();
 </script>
 {{/inline}}

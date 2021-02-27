@@ -1,0 +1,44 @@
+.card{
+  flex-direction: column;
+  height: auto;
+  word-wrap: break-word;
+  background-color: $white;
+  border: 1px solid $gray-200;
+
+  .card-img{
+
+    .card-img-header{}
+    .card-img-footer{
+      .fade{}
+
+      .nav-flex{}
+      .nav-vertical{}
+    }
+    .card-img-ticket{}
+  }
+
+  .card-img-top{}
+  .card-img-bottom{}
+
+  .card-header{
+    .card-header-tabs{}
+  }
+  .card-body{
+    .card-title{}
+    .card-subtitle{}
+    .card-small{}
+    .card-text{}
+  }
+  .collapse{}
+  .card-footer{}
+}
+
+.card-group{}
+
+.card-columns{}
+.card-deck{}
+
+
+
+
+

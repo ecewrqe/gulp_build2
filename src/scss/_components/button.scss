@@ -52,10 +52,17 @@
 
 
 .btn{
+  border: $btn-border-width solid transparent;
+  padding: $btn-padding-y $btn-padding-x;
+  font-size: $font-size-base;
+  border-radius: $border-radius;
+  line-height: $line-height-base;
   &:focus{
     @include _box-shadow(none);
   }
 }
+
+
 .btn-1{
   display: inline-block;
   font-weight: 400;
@@ -63,6 +70,10 @@
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
+  white-space: nowrap;
+
+  cursor: all-scroll;
+
   @include user-select(none);
   background-color: $btn-bg;
 
@@ -90,6 +101,9 @@
     cursor: default;
   }
 
+  &:not(:disabled):not(.disabled){
+    cursor: pointer !important;
+  }
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active{
     background-color: $btn-bg-active;
@@ -102,7 +116,7 @@
   @extend .btn-1;
 }
 
-a.btn-1, a.btn-2{
+a.btn-1:disabled, a.btn-2:disabled{
   pointer-events: none;
 }
 
@@ -136,22 +150,28 @@ a.btn-1, a.btn-2{
   bottom: -2px;
 }
 
+.btn-pills{
+  @extend .rounded-pill
+}
 
 
 
 @each $color, $value in $theme-colors {
   .btn.btn-#{$color}, .btn-1.btn-#{$color}, .btn-2.btn-#{$color}{
-    @include _button-variant(theme-color-level($color, $btn-bg-level))
+    @include _button-variant(theme-color-level($color, $btn-bg-level));
+
   }
   .btn-hover-#{$color}{
-    @include _button-hover-variant(theme-color-level($color, $btn-bg-level))
+    @include _button-hover-variant(theme-color-level($color, $btn-bg-level));
   }
   .btn-active-#{$color}{
-    @include _button-active-variant(theme-color-level($color, $btn-bg-level))
+    @include _button-active-variant(theme-color-level($color, $btn-bg-level));
   }
   .btn.btn-outline-#{$color}, .btn-1.btn-outline-#{$color}, .btn-2.btn-outline-#{$color}{
     border: 0.5px solid theme-color-level($color, $btn-bg-level);
-    @extend .btn-hover-#{$color};
+    color: darken($value, 20%);
+    @include _button-hover-variant(theme-color-level($color, $btn-bg-level))
+    //@extend .btn-hover-#{$color};
   }
 }
 
@@ -174,3 +194,9 @@ a.btn-1, a.btn-2{
 }
 
 /* btn icon */
+.btn-icon{
+
+}
+
+
+/*  */

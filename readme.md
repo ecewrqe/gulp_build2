@@ -1,5 +1,8 @@
-# 请读我 #
+# Readme #
 这是一个快速搭建gulp系统的工具集，内置了一套案例和awesomefont pro, 等优质的图标库
+通过改平台开始对bootstrap css样式进行整合和改造
+this is a tool tip for build gulp system fastly, set some example and superior icon collections
+
 
 ### 怎么运行?
 * 这套工具集是基于gulp平台搭建的，使用了gulp任务列表进行构建
@@ -37,6 +40,9 @@ toc, markdown插件，可在handlebars文档中插入markdown，渲染成html
 - button
 - badge
 
+ssh -i "/mnt/e/one drive/OneDrive/machine/bekazone.pem" ec2-user@ec2-3-16-160-161.us-east-2.compute.amazonaws.com
+
+scp -i "/mnt/e/one drive/OneDrive/machine/bekazone.pem" source  ec2-user@ec2-3-16-160-161.us-east-2.compute.amazonaws.com:~/
 
 
 

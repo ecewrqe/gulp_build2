@@ -33,34 +33,40 @@
 // button variant
 @mixin _button-variant($value){
   background-color: $value;
-  color: color-yiq(darken($value, 20%));
+  color: color-yiq(darken($value, 40%));
   border: 0.25px solid darken($value, 5%);
-  &:hover, &:focus{
+  &:hover, &:focus,
+  .show > &.dropdown-toggle:focus{
     background-color: $value;
-    color: color-yiq(darken($value, 20%)) !important;
+    color: color-yiq(darken($value, 50%));
   }
   &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active{
-    background-color: darken($value, 10%);
-    color: color-yiq(darken($value, 20%));
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle{
+    background-color: darken($value, 20%);
+    color: color-yiq(darken($value, 50%));
     border: 0.25px solid darken($value, 15%);
     box-shadow: none;
+
   }
+
+
 }
 
 
 
 @mixin _button-hover-variant($value){
   &:hover{
-    background-color: $value !important;
-    color: color-yiq(darken($value, 20%)) !important;
+    background-color: $value;
+    color: color-yiq(darken($value, 50%));
     border: 0.25px solid darken($value, 5%);
   }
 
   &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active{
-    background-color: darken($value, 10%);
-    color: color-yiq(darken($value, 10%));
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle:focus{
+    background-color: darken($value, 20%);
+    color: color-yiq(darken($value, 50%));
     border: 0.25px solid darken($value, 15%);
     box-shadow: none;
   }
@@ -68,10 +74,11 @@
 
 @mixin _button-active-variant($value){
   &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active{
-    background-color: darken($value, 10%) !important;
-    color: color-yiq(darken($value, 20%)) !important;
-    border: 0.25px solid darken($value, 15%) !important;
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle:focus{
+    background-color: darken($value, 20%);
+    color: color-yiq(darken($value, 50%));
+    border: 0.25px solid darken($value, 15%);
     box-shadow: none;
   }
 }
