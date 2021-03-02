@@ -1,0 +1,28 @@
+
+/* bootstrap Spacing ========================*/
+$spacer: $rem-16 !default;
+$spacers: () !default;
+
+$spacers: map-merge(
+                (
+                        0: 0,
+                        1: $rem-4,
+                        2: $rem-8,
+                        3: $rem-16,
+                        4: $rem-20,
+                        5: $rem-24,
+                ), $spacers
+);
+
+$sizes: () !default;
+$sizes: map-merge(
+                (
+                        25: 25%,
+                        50: 50%,
+                        75: 75%,
+                        100: 100%,
+                        auto: auto
+                ), $sizes
+);
+
+/* end bootstrap ========================*/

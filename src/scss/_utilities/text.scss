@@ -1,5 +1,16 @@
 $text-decoration-style: solid, dashed, dotted, double, wavy, revert;
 $text-decoration-line: underline, overline, line-through, blink, overline, inherit;
+@each $f_size, $f_value in $font-rems{
+  .font-#{$f_size}{
+    font-size: $f_value;
+  }
+}
+
+@each $f_size, $f_value in $font-pixels{
+  .font-#{$f_size}{
+    font-size: $f_value;
+  }
+}
 
 @each $style in $text-decoration-style {
   @each $line in $text-decoration-line {

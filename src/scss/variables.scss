@@ -1,0 +1,262 @@
+@import "_mixins/functions";
+
+@import "_variables/colors";
+@import "_variables/options";
+@import "_variables/scales";
+@import "_variables/spacings";
+
+@import "_variables/breakpoints";
+
+@import "_variables/reboots";
+
+
+
+
+
+// Components
+// Define common padding and border radius sizes and more.
+// line height, border, radius, boxShadow
+/* bootstrap Components 1: line height, border, radius========================*/
+$line-height-lg: 1.5 !default;
+$line-height-sm: 1.5 !default;
+
+$border-width: 1px !default;
+$border-color: $gray-300 !default;
+
+$border-radius:  0.25rem !default;
+$border-radius-lg: 0.3rem  !default;
+$border-radius-sm: 0.2rem  !default;
+
+$rounded-pill: 50rem  !default;
+/* end bootstrap ========================*/
+$line-height: 1.5 !default;
+
+$rounded-1:                         0.25em !default;
+$rounded-2:                         0.5em !default;
+$rounded-3:                         0.75em !default;
+$rounded-4:                         1em !default;
+$rounded-5:                         1.25em !default;
+$rounded-round:                     4em !default;
+
+/* bootstrap Components 2: boxshadow ========================*/
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
+$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175)  !default;
+/* end bootstrap ========================*/
+
+$box-shadow-heavy-1:  1px 1px 2px rgba($black, 0.075) !default;
+$box-shadow-heavy-2:  0.5px 1px 2px rgba($black, 0.075) !default;
+$box-shadow-heavy-3:  -1px 1px 2px rgba($black, 0.075) !default;
+
+
+/* bootstrap component 3: active ========================*/
+$component-active-color:  $white  !default;
+$component-active-bg:  $primary !default;
+/* end bootstrap ========================*/
+
+/* bootstrap component 4: caret ========================*/
+$caret-width:  0.3em  !default;
+$caret-vertical-align:  $caret-width * 0.85  !default;
+$caret-spacing:  $caret-width * 0.85  !default;
+/* end bootstrap ========================*/
+
+/* bootstrap component 5: transition ========================*/
+$transition-base:  all 0.2s ease-in-out  !default;
+$transition-fade:  opacity 0.15s linear  !default;
+$transition-collapse:  height  0.35s ease  !default;
+/* end bootstrap ========================*/
+
+// Typography
+//
+// macro font, line-height, color for body text, headings
+/* bootstrap typography ========================*/
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+$font-size-base: 1rem !default;
+$font-size-lg: $font-size-base * 1.25  !default;
+$font-size-sm: $font-size-base * 0.875  !default;
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300  !default;
+$font-weight-normal: 400  !default;
+$font-weight-bold: 700  !default;
+$font-weight-bolder: bolder  !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5  !default;
+
+/* headings ----------------------------*/
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base  !default;
+
+$headings-margin-bottom: $spacer / 2  !default;
+$headings-font-family:  null  !default;
+$headings-font-weight:  500  !default;
+$headings-line-height: 1.2  !default;
+$headings-color:  null  !default;
+
+$display1-size: 6rem   !default;
+$display2-size: 5.5rem  !default;
+$display3-size:  4.5rem  !default;
+$display4-size:  3.5rem  !default;
+
+$lead-font-size: $font-size-base * 1.25 !default;
+$lead-font-weight: 300 !default;
+
+$small-font-size: 80%  !default;
+
+$text-muted: $gray-600  !default;
+
+$blockquote-font-size:  $font-size-base * 1.25  !default;
+$blockquote-small-font-size:  $small-font-size  !default;
+$blockquote-small-color:  $gray-600  !default;
+
+$small-font-color:  $gray-600  !default;
+
+$mark-padding:  0.2em !default;
+$mark-bg:    #fcf8e3 !default;
+
+$dt-font-weight:  $font-weight-bold  !default;
+
+$kbd-box-shadow:  inset 0 -0.1rem 0 rgba($black, 0.25) !default;
+$nested-kbd-font-weight:  $font-weight-bold  !default;
+
+$list-inline-padding:  0.5rem  !default;
+
+
+/* end bootstrap ========================*/
+$font-size-base:              0.8rem !default;
+$font-size-lg:                 $font-size-base * 1.25 !default;
+$font-size-sm:                 $font-size-base * .875 !default;
+
+
+
+
+
+// border
+/* bootstrap border ========================*/
+$border-width: 1px;
+$border-color: rgba(0,0,0,0.15);
+
+$hr-border-color:  rgba($black, 0.1);
+$hr-border-width: 1px  !default;
+$hr-margin-y:  $spacer !default;
+/* end bootstrap ========================*/
+$border-radius-clear:         0   !default;
+$border-radius:               2px !default;
+$border-radius-lg:            5px !default;
+
+
+// Tables
+// Customizes the `.table` component
+/* bootstrap table ========================*/
+$table-cell-padding:  0.75rem  !default;
+$table-cell-padding-sm:  0.3rem  !default;
+
+$table-color: $body-color !default;
+$table-bg:  transparent  !default;
+$table-accent-bg:  rgba($black, 0.05) !default;
+
+$table-hover-color: $table-color  !default;
+$table-hover-bg: rgba($black, 0.075)  !default;
+
+$table-active-bg: rgba($black, 0.075)  !default;
+
+$table-border-width:  $border-width  !default;
+$table-border-color:  $border-color  !default;
+
+$table-head-bg:  $gray-200  !default;
+$table-head-color:  $gray-700  !default;
+
+$table-dark-color: $white !default;
+$table-dark-bg:  $gray-800  !default;
+$table-dark-accent-bg:  rgba($white, 0.05)  !default;
+$table-dark-hover-color:  $table-dark-color  !default;
+$table-dark-hover-bg:  rgba($white, 0.075)  !default;
+$table-dark-border-color:  lighten($table-dark-bg, 7.5%)  !default;
+
+$table-striped-order:  odd  !default;
+
+$table-caption-color: $text-muted  !default;
+
+$table-bg-level:  -9 !default;
+$table-border-level:  -6 !default;
+/* end bootstrap ========================*/
+
+// Button
+/* bootstrap button ========================*/
+
+$input-btn-padding-y: 0.375rem  !default;
+$input-btn-padding-x: 0.75rem   !default;
+$input-btn-font-family: null !default;
+$input-btn-font-size: $font-size-base  !default;
+$input-btn-line-height:  $line-height-base  !default;
+
+$input-btn-focus-width: 0.2rem !default;
+// primary
+$input-btn-focus-color: rgba($component-active-bg, 0.25) !default;
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+
+$input-btn-padding-y-sm:  0.25rem !default;
+$input-btn-padding-x-sm:  0.5rem  !default;
+
+$input-btn-font-size-sm: $font-size-sm  !default;
+$input-btn-line-height-sm: $line-height-sm  !default;
+
+$input-btn-padding-y-lg:  0.5rem  !default;
+$input-btn-padding-x-lg:  1rem  !default;
+
+$input-btn-font-size-lg:  $font-size-lg  !default;
+//$input-btn-line-height-lg:  $font-size-lg  !default;
+/* end bootstrap ========================*/
+$btn-border-width:                    0.0625rem             !default;
+$btn-bg:                              transparent           !default;
+$btn-bg-active:                       darken($white, 10%)   !default;
+//$btn-padding-x:                       0.75rem                !default;
+//$btn-padding-y:                       0.375rem                !default;
+//
+//$btn-padding-x-lg:                    $btn-padding-x + 0.1rem  !default;
+//$btn-padding-y-lg:                    $btn-padding-y + 0.1rem  !default;
+//
+//$btn-padding-x-sm:                    $btn-padding-x - 0.1rem  !default;
+//$btn-padding-y-sm:                    $btn-padding-y - 0.1rem  !default;
+
+
+$btn-bg-level:                        -5                                !default;
+$btn-border:                          0.25px solid darken($white, 5%)   !default;
+
+$btn-outset-shadow:                   1px 1px 2px black                 !default;
+$btn-inset-shadow:                    inset 1px 1px 2px black           !default;
+$btn-inset-reverse-shadow:            inset -1px -1px 2px black         !default;
+
+
+
+// alert
+$alert-padding-y:                   .75rem !default;
+$alert-padding-x:                   1.25rem !default;
+
+$alert-padding-y-sm:                   $alert-padding-y - 0.4rem !default;
+$alert-padding-x-sm:                   $alert-padding-x - 0.3rem !default;
+$alert-border-radius-lg:               $border-radius-lg !default;
+$alert-border-radius-clear:               $border-radius-clear !default;
+
+// badge
+$badge-border-radius-lg:               $border-radius-lg !default;
+$badge-border-radius-clear:               $border-radius-clear !default;
+
+//
+$link-color:                          $body-color !default;
+$link-hover-color:                    lighten($body-color, 20%)  !default;
+
+
+// Close
+$close-font-size:                   $font-size-base !default;
+
+
+

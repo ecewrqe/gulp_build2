@@ -1,0 +1,35 @@
+@import "../_mixins/functions";
+@import "colors";
+@import "scales";
+
+// Grid breakpoints
+// define the minimum dimensions at which your layout will change
+/* bootstrap breakpoints.scss ========================*/
+$grid-breakpoints: (
+        xs: 0,
+        sm: $px-576,
+        md: $px-768,
+        lg: $px-992,
+        xl: $px-1200
+) !default;
+
+$container-max-widths: (
+        sm: $px-540,
+        md: $px-720,
+        lg: $px-960,
+        xl: $px-1140
+) !default;
+
+/* end bootstrap ========================*/
+
+// Grid columns
+// Set the number of columns and specify the width of gutter
+
+/* bootstrap grid-columns ========================*/
+$grid-columns: 12 !default;
+$grid-gutter-width:  $px-30  !default;
+$grid-row-columns: 6 !default;
+
+/* end bootstrap ========================*/
+
+$grid-gutter-width: $grid-gutter-width / 2;

@@ -1,3 +1,5 @@
+@import "../_mixins/alert";
+
 $alert-border-level:   -10 !default;
 .alert {
   .close {

@@ -1,0 +1,18 @@
+/* Bootstrap alert =============================== */
+
+@mixin alert-variant($background, $border-color, $color){
+  color: $color;
+  @include gradient-bg($background);
+  border-color: $border-color;
+
+  hr{
+    border-top-color: darken($border, 5%);
+  }
+  .alert-link{
+    color: darken($color, 10%)
+  }
+}
+
+/* End bootstrap ===============================*/
+
+

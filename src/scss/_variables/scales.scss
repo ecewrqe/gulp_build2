@@ -1,0 +1,116 @@
+/* Scales ========================*/
+// pixel size
+$px-025: 0.25px !default;
+$px-05: 0.5px !default;
+$px-075: 0.75px !default;
+$px-1: 1px !default;
+$px-2: 2px !default;
+$px-3: 3px !default;
+$px-4: 4px !default;
+$px-5: 5px !default;
+$px-6: 6px !default;
+$px-7: 7px !default;
+$px-8:  8px !default;
+$px-10: 10px  !default;
+$px-12:  12px  !default;
+$px-14: 14px  !default;
+$px-16: 16px  !default;
+$px-18: 18px  !default;
+$px-20: 20px  !default;
+$px-24: 24px !default;
+$px-32: 32px !default;
+$px-36: 36px !default;
+$px-45: 45px !default;
+$px-48: 48px !default;
+$px-50: 50px !default;
+$px-60: 60px !default;
+$px-64: 64px !default;
+$px-72: 72px !default;
+$px-96: 96px !default;
+$px-108: 108px !default;
+
+$px-15: 15px !default;
+$px-30: 30px !default;
+$px-540: 540px !default;
+$px-576: 576px !default;
+$px-600: 600px !default;
+$px-720: 720px !default;
+$px-768: 768px !default;
+$px-960: 960px !default;
+$px-992: 992px !default;
+$px-1140: 1120px !default;
+$px-1200: 1200px !default;
+
+
+// rem size
+$rem-025: _rem($px-025) !default; // 0.015625 rem
+$rem-05 : _rem($px-05) !default;   // 0.03125 rem
+$rem-075: _rem($px-075) !default; // 0.046875 rem
+$rem-1  : _rem($px-1) !default; // 0.0625 rem
+$rem-2  : _rem($px-2) !default; // 0.125 rem
+$rem-3  : _rem($px-3) !default; // 0.1825 rem
+$rem-4  : _rem($px-4) !default; // 0.25 rem
+$rem-5  : _rem($px-5) !default; // 0.3125 rem
+$rem-6  : _rem($px-6) !default; // 0.375 rem
+$rem-7  : _rem($px-7) !default; // 0.4375 rem
+$rem-8  : _rem($px-8) !default; // 0.5 rem
+$rem-10 : _rem($px-10) !default;  // 0.625 rem
+$rem-12 : _rem($px-12) !default;  // 0.75 rem
+$rem-14 : _rem($px-14) !default;  // 0.875 rem
+$rem-16 : _rem($px-16) !default;  // 1 rem
+$rem-18 : _rem($px-18) !default;  // 1.125 rem
+$rem-20 : _rem($px-20) !default;  // 1.25 rem
+$rem-24 : _rem($px-24) !default;  // 1.5 rem
+$rem-32 : _rem($px-32) !default;  // 2 rem
+$rem-36 : _rem($px-36) !default;  // 2.25 rem
+$rem-45 : _rem($px-45) !default;  // 2.8125 rem
+$rem-48 : _rem($px-48) !default;  // 3 rem
+$rem-50 : _rem($px-50) !default;  // 3.125 rem
+$rem-60 : _rem($px-60) !default;  // 3.75 rem
+$rem-64 : _rem($px-64) !default;  // 4 rem
+$rem-72 : _rem($px-72) !default;  // 4.5rem
+$rem-96 : _rem($px-96) !default;  // 6rem
+$rem-108: _rem($px-108) !default; // 6.75rem
+$font-pixels: (
+        "px-8"  : $px-8,
+        "px-10" : $px-10,
+        "px-12" : $px-12,
+        "px-14" : $px-14,
+        "px-16" : $px-16,
+        "px-18" : $px-18,
+        "px-20" : $px-20,
+        "px-24" : $px-24,
+        "px-32" : $px-32,
+        "px-36" : $px-36,
+        "px-45" : $px-45,
+        "px-48" : $px-48,
+        "px-50" : $px-50,
+        "px-60" : $px-60,
+        "px-64" : $px-64,
+        "px-72" : $px-72,
+        "px-96" : $px-96,
+        "px-108": $px-108
+) !default;
+
+$font-rems: (
+        "rem-8"  : $rem-8,
+        "rem-10" : $rem-10,
+        "rem-12" : $rem-12,
+        "rem-14" : $rem-14,
+        "rem-16" : $rem-16,
+        "rem-18" : $rem-18,
+        "rem-20" : $rem-20,
+        "rem-24" : $rem-24,
+        "rem-32" : $rem-32,
+        "rem-36" : $rem-36,
+        "rem-45" : $rem-45,
+        "rem-48" : $rem-48,
+        "rem-50" : $rem-50,
+        "rem-60" : $rem-60,
+        "rem-64" : $rem-64,
+        "rem-72" : $rem-72,
+        "rem-96" : $rem-96,
+        "rem-108": $rem-108
+) !default;
+
+/* End Scales ========================*/

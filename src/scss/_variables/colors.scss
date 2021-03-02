@@ -1,0 +1,790 @@
+/* teaAdmin colors ========================*/
+
+$white: #fff !default;
+$black: #000 !default;
+
+$snow: #FFFAFA !default;
+$snow-1: #EEE9E9 !default;
+$snow-2: #CDC9C9 !default;
+$snow-3: #8B8989 !default;
+
+$seaShell: #FFF5EE !default;
+$seaShell-1: #EEE5DE !default;
+$seaShell-2: #CDC5BF !default;
+$seaShell-3: #8B8682 !default;
+
+$antiqueWhite: #FFEFDB !default;
+$antiqueWhite-1: #EEDFCC !default;
+$antiqueWhite-2: #CDC0B0 !default;
+$antiqueWhite-3: #8B8378 !default;
+
+$bisque: #FFE4C4 !default;
+$bisque-1: #EED5B7 !default;
+$bisque-2: #CDB79E !default;
+$bisque-3: #8B7D6B !default;
+
+$peachPuff: #FFDAB9 !default;
+$peachPuff-1: #EECBAD !default;
+$peachPuff-2: #CDAF95 !default;
+$peachPuff-3: #8B7765 !default;
+
+$navajoWhite: #FFDEAD !default;
+$navajoWhite-1: #EECFA1 !default;
+$navajoWhite-2: #CDB38B !default;
+$navajoWhite-3: #8B795E !default;
+
+$lemonChiffon: #FFF8DC !default;
+$lemonChiffon-1: #EEE9BF !default;
+$lemonChiffon-2: #CDC9A5 !default;
+$lemonChiffon-3: #8B8970 !default;
+
+$cornsilk: #FFF8DC !default;
+$cornsilk-1: #EEE8CD !default;
+$cornsilk-2: #CDC8B1 !default;
+$cornsilk-3: #8B8878 !default;
+
+$lvory: #FFFFF0 !default;
+$lvory-1: #EEEEE0 !default;
+$lvory-2: #CDCDC1 !default;
+$lvory-3: #8B8B83 !default;
+
+$honeydew: #F0FFF0 !default;
+$honeydew-1: #E0EEE0 !default;
+$honeydew-2: #C1CDC1 !default;
+$honeydew-3: #838B83 !default;
+
+$lavenderBlush: #FFF0F5 !default;
+$lavenderBlush-1: #EEE0E5 !default;
+$lavenderBlush-2: #CDC1C5 !default;
+$lavenderBlush-3: #8B8386 !default;
+
+$mistyRose: #FFE4E1 !default;
+$mistyRose-1: #EED5D2 !default;
+$mistyRose-2: #CDB7B5 !default;
+$mistyRose-3: #8B7D7B !default;
+
+$azure: #F0FFFF !default;
+$azure-1: #E0EEEE !default;
+$azure-2: #C1CDCD !default;
+$azure-3: #838B8B !default;
+
+$stateBlue: #836FFF !default;
+$stateBlue-1: #7A67EE !default;
+$stateBlue-2: #6959CD !default;
+$stateBlue-3: #473C8B !default;
+
+$blue: #0000FF !default;
+$blue-1: #0000EE !default;
+$blue-2: #0000CD !default;
+$blue-3: #00008B !default;
+
+$dodgerBlue: #63B8FF !default;
+$dodgerBlue-1: #1C86EE !default;
+$dodgerBlue-2: #1874CD !default;
+$dodgerBlue-3: #104E8B !default;
+
+$steelBlue: #63B8FF !default;
+$steelBlue-1: #5CACEE !default;
+$steelBlue-2: #4F94CD !default;
+$steelBlue-3: #36648B !default;
+
+$deepSkyBlue: #00BFFF !default;
+$deepSkyBlue-1: #00B2EE !default;
+$deepSkyBlue-2: #009ACD !default;
+$deepSkyBlue-3: #00688B !default;
+
+$skyBlue: #87CEFF !default;
+$skyBlue-1: #7EC0EE !default;
+$skyBlue-2: #6CA6CD !default;
+$skyBlue-3: #4A708B !default;
+
+$lightSkyBlue: #B0E2FF !default;
+$lightSkyBlue-1: #A4D3EE !default;
+$lightSkyBlue-2: #8DB6CD !default;
+$lightSkyBlue-3: #607B8B !default;
+
+$stateGray: #C6E2FF !default;
+$stateGray-1: #B9D3EE !default;
+$stateGray-2: #9FB6CD !default;
+$stateGray-3: #6C7B8B !default;
+
+$lightSteelBlue: #CAE1FF !default;
+$lightSteelBlue-1: #BCD2EE !default;
+$lightSteelBlue-2: #A2B5CD !default;
+$lightSteelBlue-3: #6E7B8B !default;
+
+$lightBlue: #BFEFFF !default;
+$lightBlue-1: #B2DFEE !default;
+$lightBlue-2: #9AC0CD !default;
+$lightBlue-3: #68838B !default;
+
+$lightCyan: #E0FFFF !default;
+$lightCyan-1: #D1EEEE !default;
+$lightCyan-2: #B4CDCD !default;
+$lightCyan-3: #7A8B8B !default;
+
+$paleTurquoise: #BBFFFF !default;
+$paleTurquoise-1: #AEEEEE !default;
+$paleTurquoise-2: #96CDCD !default;
+$paleTurquoise-3: #668B8B !default;
+
+$cadetBlue: #98F5FF !default;
+$cadetBlue-1: #8EE5EE !default;
+$cadetBlue-2: #7AC5CD !default;
+$cadetBlue-3: #53868B !default;
+
+$turquoise: #00F5FF !default;
+$turquoise-1: #00E5EE !default;
+$turquoise-2: #00C5CD !default;
+$turquoise-3: #00868B !default;
+
+$cyan: #00FFFF !default;
+$cyan-1: #00EEEE !default;
+$cyan-2: #00CDCD !default;
+$cyan-3: #008B8B !default;
+
+$darkStateGray: #97FFFF !default;
+$darkStateGray-1: #8DEEEE !default;
+$darkStateGray-2: #79CDCD !default;
+$darkStateGray-3: #528B8B !default;
+
+$aquamarine: #7FFFD4 !default;
+$aquamarine-1: #76EEC6 !default;
+$aquamarine-2: #66CDAA !default;
+$aquamarine-3: #458B74 !default;
+
+$darkSeaGreen: #C1FFC1 !default;
+$darkSeaGreen-1: #B4EEB4 !default;
+$darkSeaGreen-2: #9BCD9B !default;
+$darkSeaGreen-3: #698B69 !default;
+
+$seaGreen: #54FF9F !default;
+$seaGreen-1: #4EEE94 !default;
+$seaGreen-2: #43CD80 !default;
+$seaGreen-3: #2E8B57 !default;
+
+$paleGreen: #9AFF9A !default;
+$paleGreen-1: #90EE90 !default;
+$paleGreen-2: #7CCD7C !default;
+$paleGreen-3: #548B54 !default;
+
+$springGreen: #00FF7F !default;
+$springGreen-1: #00EE76 !default;
+$springGreen-2: #00CD66 !default;
+$springGreen-3: #008B45 !default;
+
+$green: #00FF00 !default;
+$green-1: #00EE00 !default;
+$green-2: #00CD00 !default;
+$green-3: #008B00 !default;
+
+$chartreuse: #7FFF00 !default;
+$chartreuse-1: #76EE00 !default;
+$chartreuse-2: #66CD00 !default;
+$chartreuse-3: #458B00 !default;
+
+$oliveDrab: #C0FF3E !default;
+$oliveDrab-1: #B3EE3A !default;
+$oliveDrab-2: #9ACD32 !default;
+$oliveDrab-3: #698B22 !default;
+
+$darkOliveGreen: #CAFF70 !default;
+$darkOliveGreen-1: #BCEE68 !default;
+$darkOliveGreen-2: #A2CD5A !default;
+$darkOliveGreen-3: #6E8B3D !default;
+
+$khaki: #FFF68F !default;
+$khaki-1: #EEE685 !default;
+$khaki-2: #CDC673 !default;
+$khaki-3: #8B864E !default;
+
+$lightGoldenrod: #FFEC8B !default;
+$lightGoldenrod-1: #EEDC82 !default;
+$lightGoldenrod-2: #CDBE70 !default;
+$lightGoldenrod-3: #8B814C !default;
+
+$lightYellow: #FFFFE0 !default;
+$lightYellow-1: #EEEED1 !default;
+$lightYellow-2: #CDCDB4 !default;
+$lightYellow-3: #8B8B7A !default;
+
+$yellow: #FFFF00 !default;
+$yellow-1: #EEEE00 !default;
+$yellow-2: #CDCD00 !default;
+$yellow-3: #8B8B00 !default;
+
+$gold: #FFD700 !default;
+$gold-1: #FFD700 !default;
+$gold-2: #FFD700 !default;
+$gold-3: #FFD700 !default;
+
+$goldenrod: #FFC125 !default;
+$goldenrod-1: #EEB422 !default;
+$goldenrod-2: #CD9B1D !default;
+$goldenrod-3: #8B6914 !default;
+
+$darkGoldenrod: #FFB90F !default;
+$darkGoldenrod-1: #EEAD0E !default;
+$darkGoldenrod-2: #CD950C !default;
+$darkGoldenrod-3: #8B658B !default;
+
+$rosyBrown: #FFC1C1 !default;
+$rosyBrown-1: #EEB4B4 !default;
+$rosyBrown-2: #CD9B9B !default;
+$rosyBrown-3: #8B6969 !default;
+
+$indianRed: #FF6A6A !default;
+$indianRed-1: #EE6363 !default;
+$indianRed-2: #CD5555 !default;
+$indianRed-3: #8B3A3A !default;
+
+$sienna: #FF8247 !default;
+$sienna-1: #EE7942 !default;
+$sienna-2: #CD6839 !default;
+$sienna-3: #8B4726 !default;
+
+$burlywood: #FFD39B !default;
+$burlywood-1: #EEC591 !default;
+$burlywood-2: #CDAA7D !default;
+$burlywood-3: #8B7355 !default;
+
+$wheat: #FFE7BA !default;
+$wheat-1: #EED8AE !default;
+$wheat-2: #CDBA96 !default;
+$wheat-3: #8B7E66 !default;
+
+$tan: #FFA54F !default;
+$tan-1: #EE9A49 !default;
+$tan-2: #CD853F !default;
+$tan-3: #8B5A2B !default;
+
+$chocolate: #FF7F24 !default;
+$chocolate-1: #EE7621 !default;
+$chocolate-2: #CD661D !default;
+$chocolate-3: #8B4513 !default;
+
+$firebrick: #FF3030 !default;
+$firebrick-1: #EE2C2C !default;
+$firebrick-2: #CD2626 !default;
+$firebrick-3: #8B1A1A !default;
+
+$brown: #FF4040 !default;
+$brown-1: #EE3B3B !default;
+$brown-2: #CD3333 !default;
+$brown-3: #8B2323 !default;
+
+$salmon: #FF8C69 !default;
+$salmon-1: #EE8262 !default;
+$salmon-2: #CD7054 !default;
+$salmon-3: #8B4C39 !default;
+
+$lightSalmon: #FFA07A !default;
+$lightSalmon-1: #EE9572 !default;
+$lightSalmon-2: #CD8162 !default;
+$lightSalmon-3: #8B5742 !default;
+
+$orange: #FFA500 !default;
+$orange-1: #EE9A00 !default;
+$orange-2: #CD8500 !default;
+$orange-3: #8B5A00 !default;
+
+$darkOrange: #FF7F00 !default;
+$darkOrange-1: #EE7600 !default;
+$darkOrange-2: #CD6600 !default;
+$darkOrange-3: #8B4500 !default;
+
+$coral: #FF7256 !default;
+$coral-1: #EE6A50 !default;
+$coral-2: #CD5B45 !default;
+$coral-3: #8B3E2F !default;
+
+$tomato: #FF6347 !default;
+$tomato-1: #EE5C42 !default;
+$tomato-2: #CD4F39 !default;
+$tomato-3: #8B3626 !default;
+
+$red: #FF0000 !default;
+$red-1: #EE0000 !default;
+$red-2: #CD0000 !default;
+$red-3: #8B0000 !default;
+
+$deepPink: #FF1493 !default;
+$deepPink-1: #EE1289 !default;
+$deepPink-2: #CD1076 !default;
+$deepPink-3: #8B0A50 !default;
+
+$hotPink: #FF6EB4 !default;
+$hotPink-1: #EE6AA7 !default;
+$hotPink-2: #CD6090 !default;
+$hotPink-3: #8B3A62 !default;
+
+$pink: #FFB5C5 !default;
+$pink-1: #EEA9B8 !default;
+$pink-2: #CD919E !default;
+$pink-3: #8B636C !default;
+
+$lightPink: #FFAEB9 !default;
+$lightPink-1: #EEA2AD !default;
+$lightPink-2: #CD8C95 !default;
+$lightPink-3: #8B5F65 !default;
+
+$paleVioletRed: #FF82AB !default;
+$paleVioletRed-1: #EE799F !default;
+$paleVioletRed-2: #CD6889 !default;
+$paleVioletRed-3: #8B475D !default;
+
+$maroon: #FF34B3 !default;
+$maroon-1: #EE30A7 !default;
+$maroon-2: #CD2990 !default;
+$maroon-3: #8B1C62 !default;
+
+$violetRed: #FF3E96 !default;
+$violetRed-1: #EE3A8C !default;
+$violetRed-2: #CD3278 !default;
+$violetRed-3: #8B2252 !default;
+
+$magenta: #FF00FF !default;
+$magenta-1: #EE00EE !default;
+$magenta-2: #CD00CD !default;
+$magenta-3: #8B008B !default;
+
+$orchid: #FF83FA !default;
+$orchid-1: #EE7AE9 !default;
+$orchid-2: #CD69C9 !default;
+$orchid-3: #8B4789 !default;
+
+$plum: #FFBBFF !default;
+$plum-1: #FFBBFF !default;
+$plum-2: #FFBBFF !default;
+$plum-3: #FFBBFF !default;
+
+$mediumOrchid: #E066FF !default;
+$mediumOrchid-1: #D15FEE !default;
+$mediumOrchid-2: #B452CD !default;
+$mediumOrchid-3: #7A378B !default;
+
+$darkOrchid: #BF3EFF !default;
+$darkOrchid-1: #BF3EFF !default;
+$darkOrchid-2: #BF3EFF !default;
+$darkOrchid-3: #BF3EFF !default;
+
+$purple: #9B30FF !default;
+$purple-1: #912CEE !default;
+$purple-2: #7D26CD !default;
+$purple-3: #551A8B !default;
+
+$mediumPurple: #AB82FF !default;
+$mediumPurple-1: #9F79EE !default;
+$mediumPurple-2: #8968CD !default;
+$mediumPurple-3: #5D478B !default;
+
+$thistle: #FFE1FF !default;
+$thistle-1: #EED2EE !default;
+$thistle-2: #CDB5CD !default;
+$thistle-3: #8B7B8B !default;
+
+$gray-11: #1C1C1C !default;
+$gray-21: #363636 !default;
+$gray-31: #4F4F4F !default;
+$gray-41: #696969 !default;
+$gray-51: #828282 !default;
+$gray-61: #9C9C9C !default;
+$gray-71: #B5B5B5 !default;
+$gray-81: #CFCFCF !default;
+$gray-91: #E8E8E8 !default;
+
+$gray-100: $gray-91 !default;
+$gray-200: $gray-81 !default;
+$gray-300: $gray-71 !default;
+$gray-400: $gray-61 !default;
+$gray-500: $gray-51 !default;
+$gray-600: $gray-41 !default;
+$gray-700: $gray-31 !default;
+$gray-800: $gray-21 !default;
+$gray-900: $gray-11 !default;
+
+$grays: () !default;
+$grays: map-merge(
+    (
+            "100": $gray-100,
+            "200": $gray-200,
+            "300": $gray-300,
+            "400": $gray-400,
+            "500": $gray-500,
+            "600": $gray-600,
+            "700": $gray-700,
+            "800": $gray-800,
+            "900": $gray-900
+    ),
+    $grays
+);
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    "white":                         $white,
+    "black":                         $black,
+    "gray":                       $gray-700,
+    "gray-dark":                  $gray-900,
+    "seaShell":                   $seaShell,
+    "antiqueWhite":           $antiqueWhite,
+    "bisque":                       $bisque,
+    "peachPuff":                 $peachPuff,
+    "navajoWhite":             $navajoWhite,
+    "lemonChiffon":           $lemonChiffon,
+    "cornsilk":                   $cornsilk,
+    "lvory":                         $lvory,
+    "honeydew":                   $honeydew,
+    "lavenderBlush":         $lavenderBlush,
+    "azure":                         $azure,
+    "stateBlue":                 $stateBlue,
+    "blue":                           $blue,
+    "dodgerBlue":               $dodgerBlue,
+    "steelBlue":                 $steelBlue,
+    "deepSkyBlue":             $deepSkyBlue,
+    "skyBlue":                     $skyBlue,
+    "lightSkyBlue":           $lightSkyBlue,
+    "stateGray":                 $stateGray,
+    "lightSteelBlue":       $lightSteelBlue,
+    "lightBlue":                 $lightBlue,
+    "lightCyan":                 $lightCyan,
+    "paleTurquoise":         $paleTurquoise,
+    "cadetBlue":                 $cadetBlue,
+    "turquoise":                 $turquoise,
+    "cyan":                           $cyan,
+    "darkStateGray":         $darkStateGray,
+    "aquamarine":               $aquamarine,
+    "darkSeaGreen":           $darkSeaGreen,
+    "seaGreen":                   $seaGreen,
+    "paleGreen":                 $paleGreen,
+    "springGreen":             $springGreen,
+    "Green":                         $green,
+    "chartreuse":               $chartreuse,
+    "oliveDrab":                 $oliveDrab,
+    "darkOliveGreen":       $darkOliveGreen,
+    "khaki":                         $khaki,
+    "lightGoldenrod":       $lightGoldenrod,
+    "lightYellow":             $lightYellow,
+    "yellow":                       $yellow,
+    "gold":                           $gold,
+    "goldenrod":                 $goldenrod,
+    "darkGoldenrod":         $darkGoldenrod,
+    "rosyBrown":                 $rosyBrown,
+    "indianRed":                 $indianRed,
+    "sienna":                       $sienna,
+    "burlywood":                 $burlywood,
+    "wheat":                         $wheat,
+    "tan":                             $tan,
+    "chocolate":                 $chocolate,
+    "firebrick":                 $firebrick,
+    "brown":                         $brown,
+    "salmon":                       $salmon,
+    "lightSalmon":             $lightSalmon,
+    "orange":                       $orange,
+    "darkOrange":               $darkOrange,
+    "coral":                         $coral,
+    "tomato":                       $tomato,
+    "red":                             $red,
+    "deepPink":                   $deepPink,
+    "hotPink":                     $hotPink,
+    "pink":                           $pink,
+    "lightPink":                 $lightPink,
+    "paleVioletRed":         $paleVioletRed,
+    "maroon":                       $maroon,
+    "violetRed":                 $violetRed,
+    "magenta":                     $magenta,
+    "orchid":                       $orchid,
+    "plum":                           $plum,
+    "mediumOrchid":           $mediumOrchid,
+    "darkOrchid":               $darkOrchid,
+    "purple":                       $purple,
+    "mediumPurple":           $mediumPurple,
+    "thistle":                     $thistle
+  ),
+  $colors
+);
+
+
+$colors-1: () !default;
+$colors-1: map-merge(
+  (
+    "white":                         $white,
+    "black":                         $black,
+    "gray":                       $gray-700,
+    "gray-dark":                  $gray-900,
+    "seaShell":                   $seaShell-1,
+    "antiqueWhite":           $antiqueWhite-1,
+    "bisque":                       $bisque-1,
+    "peachPuff":                 $peachPuff-1,
+    "navajoWhite":             $navajoWhite-1,
+    "lemonChiffon":           $lemonChiffon-1,
+    "cornsilk":                   $cornsilk-1,
+    "lvory":                         $lvory-1,
+    "honeydew":                   $honeydew-1,
+    "lavenderBlush":         $lavenderBlush-1,
+    "azure":                         $azure-1,
+    "stateBlue":                 $stateBlue-1,
+    "blue":                           $blue-1,
+    "dodgerBlue":               $dodgerBlue-1,
+    "steelBlue":                 $steelBlue-1,
+    "deepSkyBlue":             $deepSkyBlue-1,
+    "skyBlue":                     $skyBlue-1,
+    "lightSkyBlue":           $lightSkyBlue-1,
+    "stateGray":                 $stateGray-1,
+    "lightSteelBlue":       $lightSteelBlue-1,
+    "lightBlue":                 $lightBlue-1,
+    "lightCyan":                 $lightCyan-1,
+    "paleTurquoise":         $paleTurquoise-1,
+    "cadetBlue":                 $cadetBlue-1,
+    "turquoise":                 $turquoise-1,
+    "cyan":                           $cyan-1,
+    "darkStateGray":         $darkStateGray-1,
+    "aquamarine":               $aquamarine-1,
+    "darkSeaGreen":           $darkSeaGreen-1,
+    "seaGreen":                   $seaGreen-1,
+    "paleGreen":                 $paleGreen-1,
+    "springGreen":             $springGreen-1,
+    "Green":                         $green-1,
+    "chartreuse":               $chartreuse-1,
+    "oliveDrab":                 $oliveDrab-1,
+    "darkOliveGreen":       $darkOliveGreen-1,
+    "khaki":                         $khaki-1,
+    "lightGoldenrod":       $lightGoldenrod-1,
+    "lightYellow":             $lightYellow-1,
+    "yellow":                       $yellow-1,
+    "gold":                           $gold-1,
+    "goldenrod":                 $goldenrod-1,
+    "darkGoldenrod":         $darkGoldenrod-1,
+    "rosyBrown":                 $rosyBrown-1,
+    "indianRed":                 $indianRed-1,
+    "sienna":                       $sienna-1,
+    "burlywood":                 $burlywood-1,
+    "wheat":                         $wheat-1,
+    "tan":                             $tan-1,
+    "chocolate":                 $chocolate-1,
+    "firebrick":                 $firebrick-1,
+    "brown":                         $brown-1,
+    "salmon":                       $salmon-1,
+    "lightSalmon":             $lightSalmon-1,
+    "orange":                       $orange-1,
+    "darkOrange":               $darkOrange-1,
+    "coral":                         $coral-1,
+    "tomato":                       $tomato-1,
+    "red":                             $red-1,
+    "deepPink":                   $deepPink-1,
+    "hotPink":                     $hotPink-1,
+    "pink":                           $pink-1,
+    "lightPink":                 $lightPink-1,
+    "paleVioletRed":         $paleVioletRed-1,
+    "maroon":                       $maroon-1,
+    "violetRed":                 $violetRed-1,
+    "magenta":                     $magenta-1,
+    "orchid":                       $orchid-1,
+    "plum":                           $plum-1,
+    "mediumOrchid":           $mediumOrchid-1,
+    "darkOrchid":               $darkOrchid-1,
+    "purple":                       $purple-1,
+    "mediumPurple":           $mediumPurple-1,
+    "thistle":                     $thistle-1
+  ),
+  $colors-1
+);
+
+$colors-2: () !default;
+$colors-2: map-merge(
+  (
+    "white":                         $white,
+    "black":                         $black,
+    "gray":                       $gray-700,
+    "gray-dark":                  $gray-900,
+    "seaShell":                   $seaShell-2,
+    "antiqueWhite":           $antiqueWhite-2,
+    "bisque":                       $bisque-2,
+    "peachPuff":                 $peachPuff-2,
+    "navajoWhite":             $navajoWhite-2,
+    "lemonChiffon":           $lemonChiffon-2,
+    "cornsilk":                   $cornsilk-2,
+    "lvory":                         $lvory-2,
+    "honeydew":                   $honeydew-2,
+    "lavenderBlush":         $lavenderBlush-2,
+    "azure":                         $azure-2,
+    "stateBlue":                 $stateBlue-2,
+    "blue":                           $blue-2,
+    "dodgerBlue":               $dodgerBlue-2,
+    "steelBlue":                 $steelBlue-2,
+    "deepSkyBlue":             $deepSkyBlue-2,
+    "skyBlue":                     $skyBlue-2,
+    "lightSkyBlue":           $lightSkyBlue-2,
+    "stateGray":                 $stateGray-2,
+    "lightSteelBlue":       $lightSteelBlue-2,
+    "lightBlue":                 $lightBlue-2,
+    "lightCyan":                 $lightCyan-2,
+    "paleTurquoise":         $paleTurquoise-2,
+    "cadetBlue":                 $cadetBlue-2,
+    "turquoise":                 $turquoise-2,
+    "cyan":                           $cyan-2,
+    "darkStateGray":         $darkStateGray-2,
+    "aquamarine":               $aquamarine-2,
+    "darkSeaGreen":           $darkSeaGreen-2,
+    "seaGreen":                   $seaGreen-2,
+    "paleGreen":                 $paleGreen-2,
+    "springGreen":             $springGreen-2,
+    "Green":                         $green-2,
+    "chartreuse":               $chartreuse-2,
+    "oliveDrab":                 $oliveDrab-2,
+    "darkOliveGreen":       $darkOliveGreen-2,
+    "khaki":                         $khaki-2,
+    "lightGoldenrod":       $lightGoldenrod-2,
+    "lightYellow":             $lightYellow-2,
+    "yellow":                       $yellow-2,
+    "gold":                           $gold-2,
+    "goldenrod":                 $goldenrod-2,
+    "darkGoldenrod":         $darkGoldenrod-2,
+    "rosyBrown":                 $rosyBrown-2,
+    "indianRed":                 $indianRed-2,
+    "sienna":                       $sienna-2,
+    "burlywood":                 $burlywood-2,
+    "wheat":                         $wheat-2,
+    "tan":                             $tan-2,
+    "chocolate":                 $chocolate-2,
+    "firebrick":                 $firebrick-2,
+    "brown":                         $brown-2,
+    "salmon":                       $salmon-2,
+    "lightSalmon":             $lightSalmon-2,
+    "orange":                       $orange-2,
+    "darkOrange":               $darkOrange-2,
+    "coral":                         $coral-2,
+    "tomato":                       $tomato-2,
+    "red":                             $red-2,
+    "deepPink":                   $deepPink-2,
+    "hotPink":                     $hotPink-2,
+    "pink":                           $pink-2,
+    "lightPink":                 $lightPink-2,
+    "paleVioletRed":         $paleVioletRed-2,
+    "maroon":                       $maroon-2,
+    "violetRed":                 $violetRed-2,
+    "magenta":                     $magenta-2,
+    "orchid":                       $orchid-2,
+    "plum":                           $plum-2,
+    "mediumOrchid":           $mediumOrchid-2,
+    "darkOrchid":               $darkOrchid-2,
+    "purple":                       $purple-2,
+    "mediumPurple":           $mediumPurple-2,
+    "thistle":                     $thistle-2
+  ),
+  $colors-2
+);
+
+
+$colors-3: () !default;
+$colors-3: map-merge(
+  (
+    "white":                         $white,
+    "black":                         $black,
+    "gray":                       $gray-700,
+    "gray-dark":                  $gray-900,
+    "seaShell":                   $seaShell-3,
+    "antiqueWhite":           $antiqueWhite-3,
+    "bisque":                       $bisque-3,
+    "peachPuff":                 $peachPuff-3,
+    "navajoWhite":             $navajoWhite-3,
+    "lemonChiffon":           $lemonChiffon-3,
+    "cornsilk":                   $cornsilk-3,
+    "lvory":                         $lvory-3,
+    "honeydew":                   $honeydew-3,
+    "lavenderBlush":         $lavenderBlush-3,
+    "azure":                         $azure-3,
+    "stateBlue":                 $stateBlue-3,
+    "blue":                           $blue-3,
+    "dodgerBlue":               $dodgerBlue-3,
+    "steelBlue":                 $steelBlue-3,
+    "deepSkyBlue":             $deepSkyBlue-3,
+    "skyBlue":                     $skyBlue-3,
+    "lightSkyBlue":           $lightSkyBlue-3,
+    "stateGray":                 $stateGray-3,
+    "lightSteelBlue":       $lightSteelBlue-3,
+    "lightBlue":                 $lightBlue-3,
+    "lightCyan":                 $lightCyan-3,
+    "paleTurquoise":         $paleTurquoise-3,
+    "cadetBlue":                 $cadetBlue-3,
+    "turquoise":                 $turquoise-3,
+    "cyan":                           $cyan-3,
+    "darkStateGray":         $darkStateGray-3,
+    "aquamarine":               $aquamarine-3,
+    "darkSeaGreen":           $darkSeaGreen-3,
+    "seaGreen":                   $seaGreen-3,
+    "paleGreen":                 $paleGreen-3,
+    "springGreen":             $springGreen-3,
+    "Green":                         $green-3,
+    "chartreuse":               $chartreuse-3,
+    "oliveDrab":                 $oliveDrab-3,
+    "darkOliveGreen":       $darkOliveGreen-3,
+    "khaki":                         $khaki-3,
+    "lightGoldenrod":       $lightGoldenrod-3,
+    "lightYellow":             $lightYellow-3,
+    "yellow":                       $yellow-3,
+    "gold":                           $gold-3,
+    "goldenrod":                 $goldenrod-3,
+    "darkGoldenrod":         $darkGoldenrod-3,
+    "rosyBrown":                 $rosyBrown-3,
+    "indianRed":                 $indianRed-3,
+    "sienna":                       $sienna-3,
+    "burlywood":                 $burlywood-3,
+    "wheat":                         $wheat-3,
+    "tan":                             $tan-3,
+    "chocolate":                 $chocolate-3,
+    "firebrick":                 $firebrick-3,
+    "brown":                         $brown-3,
+    "salmon":                       $salmon-3,
+    "lightSalmon":             $lightSalmon-3,
+    "orange":                       $orange-3,
+    "darkOrange":               $darkOrange-3,
+    "coral":                         $coral-3,
+    "tomato":                       $tomato-3,
+    "red":                             $red-3,
+    "deepPink":                   $deepPink-3,
+    "hotPink":                     $hotPink-3,
+    "pink":                           $pink-3,
+    "lightPink":                 $lightPink-3,
+    "paleVioletRed":         $paleVioletRed-3,
+    "maroon":                       $maroon-3,
+    "violetRed":                 $violetRed-3,
+    "magenta":                     $magenta-3,
+    "orchid":                       $orchid-3,
+    "plum":                           $plum-3,
+    "mediumOrchid":           $mediumOrchid-3,
+    "darkOrchid":               $darkOrchid-3,
+    "purple":                       $purple-3,
+    "mediumPurple":           $mediumPurple-3,
+    "thistle":                     $thistle-3
+  ),
+  $colors-3
+);
+
+$default:       $bisque-1 !default;
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "default":    $default,
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+/* End Colors ========================*/
