@@ -1,0 +1,25 @@
+$l-s-circle: circle;
+$l-s-decimal: decimal;
+$l-s-decimal-lz: decimal-leading-zero;
+$l-s-disc: disc;
+$l-s-inherit: inherit;
+$l-s-lower-alpha: lower-alpha;
+$l-s-lower-greek: lower-greek;
+$l-s-lower-roman: lower-roman;
+$l-s-square: square;
+$l-s-upper-alpha: upper-alpha;
+$l-s-upper-roman: upper-roman;
+
+$list-style-types: (
+        "circle": $l-s-circle,
+        "decimal": $l-s-decimal,
+        "decimal-leading-zero": $l-s-decimal-lz,
+        "disc": $l-s-disc,
+        "square": $l-s-square,
+        "inherit": $l-s-inherit,
+        "lower-alpha": $l-s-lower-alpha,
+        "lower-greek": $l-s-lower-greek,
+        "lower-roman": $l-s-lower-roman,
+        "upper-alpha": $l-s-upper-alpha,
+        "upper-roman": $l-s-upper-roman
+) !default;

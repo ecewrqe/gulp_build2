@@ -36,7 +36,7 @@
     text-shadow: 0 0 0 $input-color;
   }
 
-  // Customize the `:focus` state to imitate native WebKit styles.
+  // Customize the `:focus` state to imitate native WebKit styles.scss.
   @include form-control-focus($ignore-warning: true);
 
   // Placeholder

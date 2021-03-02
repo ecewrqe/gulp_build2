@@ -1,16 +1,19 @@
-@mixin alert-head-border-variant($border){
+@import "functions";
+@import "../variables";
+
+@mixin _alert-head-border-variant($border){
   & .alert-heading{
     border-bottom-color: $border;
   }
 }
 
-@mixin status-variant($bg) {
+@mixin _status-variant($bg) {
     color: color-yiq($bg);
     background-color: $bg;
 
 }
 
-@mixin user-select($select){
+@mixin _user-select($select){
   -webkit-user-select: $select;
   -moz-user-select: $select;
   -ms-user-select: $select;
@@ -23,4 +26,10 @@
   box-shadow: $shadow;
 }
 
+@mixin _selection($bg_color){
+  ::selection, ::-moz-selection{
+    background-color: $bg_color;
+    color: color-yiq($bg_color)
+  }
+}
 

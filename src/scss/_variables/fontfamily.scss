@@ -1,0 +1,43 @@
+// Add your font family on this file
+// database: https://fonts.google.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+// Chinese
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+
+
+$font-family-opensans: 'Open Sans', sans-serif;
+$font-family-robot: 'Roboto', sans-serif;
+$font-family-akaya-telivigala: 'Akaya Telivigala', cursive;
+$font-family-dotgothic16: 'DotGothic16', sans-serif;
+$font-family-shippori-mincho: 'Shippori Mincho', serif;
+$font-family-roboto-mono: 'Roboto Mono', monospace;
+$font-family-ubuntu: 'Ubuntu', sans-serif;
+
+$font-family-long-cang: 'Long Cang', cursive;
+$font-family-liu-jian-mao-cao:'Liu Jian Mao Cao', cursive;
+$font-family-xiaowei: 'ZCOOL XiaoWei', serif;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+
+
+$font-families: (
+  "opensans": $font-family-opensans,
+  "robot": $font-family-robot,
+  "akaya-telivigala": $font-family-akaya-telivigala,
+  "akaya-dotgothic16": $font-family-dotgothic16,
+  "roboto-mono": $font-family-roboto-mono,
+  "ubuntu": $font-family-ubuntu,
+  "long-cang": $font-family-long-cang,
+  "liu-jian-mao-cao": $font-family-liu-jian-mao-cao,
+  "xiaowei": $font-family-xiaowei
+) !default;

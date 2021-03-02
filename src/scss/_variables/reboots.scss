@@ -3,12 +3,12 @@
 @import "scales";
 
 /* Bootstrap Reboots ========================*/
-$body-bg:    $white  !default;
+$body-bg:    $snow  !default;
 $body-color:  $gray-900  !default;
 
-$link-color:           $primary !default;
+$link-color:           $gray-900 !default;
 $link-decoration:      none !default;
-$link-hover-color:    darken($link-color, 15%) !default;
+$link-hover-color:    $gray-700 !default;
 $link-hover-decoration:        none !default;
 
 $paragraph-margin-bottom: $rem-16  !default;
@@ -24,12 +24,38 @@ $border-radius-lg: 0.3rem  !default;
 $border-radius-sm: 0.2rem  !default;
 
 $rounded-pill: 50rem  !default;
+
+
+// font
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+$font-size-base: $rem-13 !default;
+$font-size-lg: $rem-16  !default;
+$font-size-xl: $rem-20  !default;
+$font-size-sm: $rem-10  !default;
+
+$font-weight-lighter: $f-w-100 !default;
+$font-weight-light: $f-w-300  !default;
+$font-weight-normal: $f-w-400  !default;
+$font-weight-bold: $f-w-700  !default;
+$font-weight-bolder: $f-w-bold  !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5  !default;
 /* End Bootstrap Reboots ========================*/
+// link
+
 
 // Selections
 $selection-bg:    $primary  !default;
-$body-color:     color-yiq($selection-bg) !default;
 
 // Link
-$link-decoration-line:        underline  !default;
-$link-hover-decoration-line:        $link-decoration-line;
+$link-color:           $gray-900 !default;
+$link-decoration:        none  !default;
+
+$link-hover-color:    $gray-700 !default;
+$link-hover-decoration:        underline;
+
+$line-height-1-5: 1.5 !default;

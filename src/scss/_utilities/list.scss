@@ -1,0 +1,7 @@
+@import "../_variables/styles";
+
+@each $name, $value in $list-style-types{
+  .l-s-#{$name} {
+    list-style-type: $value;
+  }
+}

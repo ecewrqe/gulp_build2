@@ -1,24 +1,30 @@
 
+@each $name, $value in $roundeds{
+  .rounded-#{$name} {
+    border-radius: $value;
+  }
 
-.rounded-1{
-  border-radius: $rounded-1 !important;
+  .rounded-top-#{$name} {
+    border-top-left-radius: $value;
+    border-top-right-radius: $value;
+  }
+
+  .rounded-left-#{$name} {
+    border-top-left-radius: $value;
+    border-bottom-left-radius: $value;
+  }
+
+  .rounded-bottom-#{$name} {
+    border-bottom-right-radius: $value;
+    border-bottom-left-radius: $value;
+  }
+
+  .rounded-right-#{$name} {
+    border-bottom-right-radius: $value;
+    border-top-right-radius: $value;
+  }
 }
 
-.rounded-2{
-  border-radius: $rounded-2 !important;
-}
-.rounded-3{
-  border-radius: $rounded-3 !important;
-}
-.rounded-4{
-  border-radius: $rounded-4 !important;
-}
-.rounded-round{
-  border-radius: $rounded-round !important;
-}
-.rounded-pill{
-  border-radius: $rounded-pill !important;
-}
 
 //.border-radius-lg-top{
 //  border-radius: $border-radius-lg $border-radius-lg 0 0;

@@ -9,7 +9,7 @@
             "jsUglify": false,
             "cssMinify": false,
             "jsSourcemaps": false,
-            "cssSourcemaps": false,
+            "cssSourcemaps": true,
             "autoprefixer": false,
             "seedOnly": false,
             "rtl": false,
@@ -138,6 +138,16 @@
                 "bundle": {
                     "styles": "{$config.output}/css/node-waves.css",
                     "scripts": "{$config.output}/js/node-waves.js"
+                }
+            },
+            "highlight": {
+                "src": {
+                    "styles": [
+                        "{$config.path.node_modules}/highlight.js/styles/default.css"
+                    ]
+                },
+                "dist": {
+                    "styles": "{$config.output}/css/highlight-default.css"
                 }
             }
         },

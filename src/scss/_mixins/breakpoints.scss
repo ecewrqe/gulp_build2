@@ -37,7 +37,9 @@
 // >> 767.98px
 @function breakpoint-max($name, $breakpoints: $grid-breakpoints){
   $next: breakpoint-next($name, $breakpoints);
-  @return if($next, breakpoint-min($name, $breakpoints) - 0.02, null);
+  $break-min: breakpoint-min($name, $breakpoints);
+  @return if($next, breakpoint-min($next, $breakpoints) - 0.02, null);
+
 }
 
 // Returns a blank string if smallest breakpoint, otherwise return the name with a dash in front.

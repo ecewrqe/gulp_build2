@@ -1,3 +1,4 @@
+@import "../_mixins/functions";
 /* Scales ========================*/
 // pixel size
 $px-025: 0.25px !default;
@@ -11,8 +12,10 @@ $px-5: 5px !default;
 $px-6: 6px !default;
 $px-7: 7px !default;
 $px-8:  8px !default;
+$px-9:  9px !default;
 $px-10: 10px  !default;
 $px-12:  12px  !default;
+$px-13: 13px  !default;
 $px-14: 14px  !default;
 $px-16: 16px  !default;
 $px-18: 18px  !default;
@@ -31,6 +34,18 @@ $px-108: 108px !default;
 
 $px-15: 15px !default;
 $px-30: 30px !default;
+$px-100: 100px !default;
+$px-200: 200px !default;
+$px-300: 300px !default;
+$px-400: 400px !default;
+$px-500: 500px !default;
+$px-600: 600px !default;
+$px-700: 700px !default;
+$px-800: 800px !default;
+$px-900: 900px !default;
+$px-1000: 1000px !default;
+$px-1200: 1200px !default;
+
 $px-540: 540px !default;
 $px-576: 576px !default;
 $px-600: 600px !default;
@@ -54,8 +69,10 @@ $rem-5  : _rem($px-5) !default; // 0.3125 rem
 $rem-6  : _rem($px-6) !default; // 0.375 rem
 $rem-7  : _rem($px-7) !default; // 0.4375 rem
 $rem-8  : _rem($px-8) !default; // 0.5 rem
+$rem-9  : _rem($px-9) !default; // 0.5 rem
 $rem-10 : _rem($px-10) !default;  // 0.625 rem
 $rem-12 : _rem($px-12) !default;  // 0.75 rem
+$rem-13 : _rem($px-13) !default;
 $rem-14 : _rem($px-14) !default;  // 0.875 rem
 $rem-16 : _rem($px-16) !default;  // 1 rem
 $rem-18 : _rem($px-18) !default;  // 1.125 rem
@@ -113,4 +130,234 @@ $font-rems: (
         "rem-108": $rem-108
 ) !default;
 
+// border scales
+$border-pixels: (
+        "px-025"  : $px-025,
+        "px-05"  : $px-05,
+        "px-075"  : $px-075,
+        "px-1"  : $px-1,
+        "px-2"  : $px-2,
+        "px-3"  : $px-3,
+        "px-4"  : $px-4,
+        "px-5"  : $px-5,
+        "px-6"  : $px-6,
+        "px-7"  : $px-7,
+        "px-8"  : $px-8,
+        "px-9"  : $px-9,
+        "px-10" : $px-10,
+        "px-12" : $px-12,
+        "px-14" : $px-14,
+        "px-16" : $px-16,
+        "px-18" : $px-18,
+        "px-20" : $px-20,
+        "px-24" : $px-24,
+        "px-32" : $px-32,
+        "px-36" : $px-36,
+        "px-45" : $px-45,
+        "px-48" : $px-48,
+        "px-50" : $px-50,
+        "px-60" : $px-60,
+        "px-64" : $px-64,
+        "px-72" : $px-72,
+        "px-96" : $px-96,
+        "px-108": $px-108
+) !default;
+
+$size-pixels: map-merge($border-pixels, (
+        "px-100": $px-100,
+        "px-200": $px-200,
+        "px-300": $px-300,
+        "px-400": $px-400,
+        "px-500": $px-500,
+        "px-600": $px-600,
+        "px-700": $px-700,
+        "px-800": $px-800,
+        "px-900": $px-900,
+        "px-1200": $px-1200
+)) !default;
+$per-1: 1% !default;
+$per-2: 2% !default;
+$per-3: 3% !default;
+$per-4: 4% !default;
+$per-5: 5% !default;
+$per-6: 6% !default;
+$per-7: 7% !default;
+$per-8: 8% !default;
+$per-9: 9% !default;
+$per-10: 10% !default;
+$per-12: 12% !default;
+$per-14: 14% !default;
+$per-16: 16% !default;
+$per-18: 18% !default;
+$per-20: 20% !default;
+$per-30: 30% !default;
+$per-40: 40% !default;
+$per-50: 50% !default;
+$per-60: 60% !default;
+$per-70: 70% !default;
+$per-80: 80% !default;
+$per-90: 90% !default;
+$per-100: 100% !default;
+
+
+
+$size-percentages: (
+      "per-1": $per-1,
+        "per-2": $per-2,
+        "per-3": $per-3,
+        "per-4": $per-4,
+        "per-5": $per-5,
+        "per-6": $per-6,
+        "per-7": $per-7,
+        "per-8": $per-8,
+        "per-9": $per-9,
+        "per-10": $per-10,
+        "per-12": $per-12,
+        "per-14": $per-14,
+        "per-16": $per-16,
+        "per-18": $per-18,
+        "per-20": $per-20,
+        "per-30": $per-30,
+        "per-40": $per-40,
+        "per-50": $per-50,
+        "per-60": $per-60,
+        "per-70": $per-70,
+        "per-80": $per-80,
+        "per-90": $per-90,
+        "per-100": $per-100
+) !default;
+$sizes: map_merge(
+                $size-pixels, $size-percentages
+) !default;
+$f-w-lighter: lighter;
+$f-w-100: 100;
+$f-w-200: 200;
+$f-w-300: 300;
+$f-w-400: 400;
+$f-w-500: 500;
+$f-w-600: 600;
+$f-w-700: 700;
+$f-w-800: 800;
+$f-w-900: 900;
+$f-w-bold: bold;
+$f-w-bolder: bolder;
+
+// weight
+$font-weights: (
+        "lighter": $f-w-lighter,
+        "100": $f-w-100,
+        "200": $f-w-200,
+        "300": $f-w-300,
+        "400": $f-w-400,
+        "500": $f-w-500,
+        "600": $f-w-600,
+        "700": $f-w-700,
+        "800": $f-w-800,
+        "900": $f-w-900,
+        "bold": $f-w-bold,
+        "bolder": $f-w-bolder,
+
+) !default;
+
+// text decorations
+$t-ds-solid: solid;
+$t-ds-dashed: dashed;
+$t-ds-dotted: dotted;
+$t-ds-double: double;
+$t-ds-wavy: wavy;
+
+$text-decoration-styles: (
+  "solid": $t-ds-solid,
+  "dashed": $t-ds-dashed,
+  "dotted": $t-ds-dotted,
+  "double": $t-ds-double,
+  "wavy": $t-ds-wavy
+) !default;
+
+$b-s-solid: solid;
+$b-s-dashed: dashed;
+$b-s-dotted: dotted;
+$b-s-double: double;
+$b-s-wavy: wavy;
+
+$border-styles: (
+        "solid": $b-s-solid,
+        "dashed": $b-s-dashed,
+        "dotted": $b-s-dotted,
+        "double": $b-s-double,
+        "wavy": $b-s-wavy
+) !default;
+
+
+$t-dl-underline: underline;
+$t-dl-overline: overline;
+$t-dl-line-through: line-through;
+
+$text-decoration-lines: (
+  "underline": $t-dl-underline,
+  "overline": $t-dl-overline,
+  "line-throught": $t-dl-line-through,
+) !default;
+
+// vertical aligns
+$v-s-baseline: baseline;
+$v-s-bottom: bottom;
+$v-s-middle: middle;
+$v-s-sub: sub;
+$v-s-super: super;
+$v-s-text-bottom: text-bottom;
+$v-s-text-top: text-top;
+$v-s-top: top;
+
+$vertical-aligns: (
+        "baseline": $v-s-baseline,
+        "bottom": $v-s-bottom,
+        "middle": $v-s-middle,
+        "sub": $v-s-sub,
+        "super": $v-s-super,
+        "top": $v-s-top,
+        "text-bottom": $v-s-text-bottom,
+        "text-top": $v-s-text-top,
+
+) !default;
+
+// border radius
+$rounded-0-25:                         0.25em !default;
+$rounded-0-5:                         0.5em !default;
+$rounded-0-75:                         0.75em !default;
+$rounded-1:                         1em !default;
+$rounded-1-5:                         1.5em !default;
+$rounded-2:                         2em !default;
+$rounded-3: 3em !default;
+$rounded-4: 4em !default;
+$rounded-5: 5em !default;
+
+$rounded-per-0-25: 2.5% !default;
+$rounded-per-0-5: 5% !default;
+$rounded-per-0-75: 75% !default;
+$rounded-per-1: 10% !default;
+$rounded-per-2: 20% !default;
+$rounded-per-3: 30% !default;
+$rounded-per-4: 40% !default;
+$rounded-pill:                     50% !default;
+$roundeds: (
+        "0-25": $rounded-0-25,
+        "0-5": $rounded-0-5,
+        "0-75": $rounded-0-75,
+        "1": $rounded-1,
+        "1-5": $rounded-1-5,
+        "2": $rounded-2,
+        "3": $rounded-3,
+        "4": $rounded-4,
+        "5": $rounded-5,
+
+        "per-0-25": $rounded-per-0-25,
+        "per-0-5": $rounded-per-0-5,
+        "per-0-75": $rounded-per-0-75,
+        "per-1": $rounded-per-1,
+        "per-2": $rounded-per-2,
+        "per-3": $rounded-per-3,
+        "per-4": $rounded-per-4,
+        "pill": $rounded-pill
+) !default;
 /* End Scales ========================*/

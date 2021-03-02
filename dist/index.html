@@ -21,19 +21,115 @@
         <!---->
     </head>
     <body>
-        <a href="reboot.html" class="btn btn-primary">下一页 按钮，面包屑</a>
-        <ul class="li">
-            <li>li1</li>
-            <li>li2</li>
-            <li>li3</li>
-        </ul>
-        <div class="test">
-            <div class="test1"></div>
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control" />
-            <span class="line"></span>
-        </div>
+        <!--<div class="bg-lightsalmon position-absolute l-px-10 t-px-200 w-pc-100 h-px-502 zindex-2000 rounded-3"></div>-->
+        <a href="reboot.html" class="btn1 btn-primary">下一页 按钮，面包屑</a>
+        <button role="button">btn</button>
+        <fieldset>
+            <legend>This is the legend target</legend>
+            <label for="txt01">this it a txt label</label>
+            <input type="text" id="txt01" />
+        </fieldset>
+        <select class="w-px-50" name="slct-01" id="slct-01">
+            <optgroup label="optgrp-01">optgrp01</optgroup>
+            <option value="01">01 this is a option target</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <optgroup label="optgrp-02">optgrp02</optgroup>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+        </select>
+        <textarea name="ta01" id="ta01" cols="30" rows="10"></textarea>
+        <p class="fw-600 t-d-dashed-line-through">this is a postgrasql </p>
+        <h1>this is h1</h1>
+        <h2>this is h2 <mark class="v-a-xx fs-px-8">markg</mark></h2>
+        <h3>this is h3</h3>
+        <h4>this is h4</h4>
+        <h5>this is h5</h5>
+        <h6>this is h6</h6>
+        <div class="w-px-100 h-px-100 w-sm-up-px-300 w-sm-px-500
+    bg-orange-1 tc-yellow
+    bd-blue b-w-px-5 b-s-dashed rounded-3">hello</div>
+        <p class="t-d-dashed-underline">this is paragraphs, <mark>this is mark in the paragraphs</mark></p>
+        <abbr data-original-title="data original title" title="abbr title">this is abbreviation target</abbr>
+        <address>this is a address target</address>
+        <blockquote>this is blockquote</blockquote>
+        <strong class="u-s-none">this is strong</strong>
+        <b>this is b, bold</b>
+        <code>This is a code</code>
+        <pre>This is a pre target</pre>
+        <kbd>this is a kbd target</kbd>
+        <samp>this is a samp target</samp>
+        <template>
+            template
+        </template>
+        <figure>
+            <figcaption>figcaption</figcaption>
+            <img src="./img/1.jpg" class="w-px-100 w-sm-px-200" alt="image_1" />
+        </figure>
+        <h1>table</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>title1</th>
+                    <th>title2</th>
+                    <th>title3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>body1</td>
+                    <td>body2</td>
+                    <td>body3</td>
+                </tr>
+                <tr>
+                    <td>body1</td>
+                    <td>body2</td>
+                    <td>body3</td>
+                </tr>
+                <tr>
+                    <td>body1</td>
+                    <td>body2</td>
+                    <td>body3</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--<ul>-->
+        <!--<li>normal list 1</li>-->
+        <!--<li>normal list 2</li>-->
+        <!--<li>normal list 3</li>-->
+        <!--</ul>-->
+        <!--<ol class="l-s-circle">-->
+        <!--<li>number list 1</li>-->
+        <!--<li>number list 2</li>-->
+        <!--<li>-->
+        <!--number list 3-->
+        <!--<ul>-->
+        <!--<li>normal list 1 in number list</li>-->
+        <!--<li>normal list 2 in number list</li>-->
+        <!--<li>normal list 3 in number list</li>-->
+        <!--</ul>-->
+        <!--</li>-->
+        <!--</ol>-->
+        <!--<dl>-->
+        <!--<dt>data list title 1</dt>-->
+        <!--<dd>data list data 1-1</dd>-->
+        <!--<dd>data list data 1-2</dd>-->
+        <!--<dd>data list data 1-3</dd>-->
+        <!--<dt>data list title 2</dt>-->
+        <!--<dd>data list data 2-1</dd>-->
+        <!--<dd>data list data 2-2</dd>-->
+        <!--<dd>data list data 2-3-->
+        <!--<ul>-->
+        <!--<li>normal list 1 in data list</li>-->
+        <!--<li>normal list 2 in data list</li>-->
+        <!--<li>normal list 3 in data list</li>-->
+        <!--</ul>-->
+        <!--</dd>-->
+        <!--</dl>-->
+        <p>this is English</p>
+        <p class="f-fml-xiaowei">这是中文</p>
+        <p>これは日本語</p>
         <div class="toc">
             <ul>
                 <li><a href="#label">label</a></li>
@@ -83,11 +179,23 @@
             <i class="fab fa-weibo"></i>
             <i class="fab fa-qq"></i>
         </div>
-        <pre><code>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"alert alert-info alert-dismissible"</span>&gt;alert info
-    &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"close"</span> data-dismiss=<span class="hljs-string">"alert"</span> data-label=<span class="hljs-string">"Close"</span>&gt;
-        &lt;i <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"fal fa-times"</span>&gt;&lt;/i&gt;
-    &lt;/button&gt;
-&lt;/div&gt;
+        <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert alert-info alert-dismissible"</span>&gt;</span>alert info
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"close"</span> <span class="hljs-attr">data-dismiss</span>=<span class="hljs-string">"alert"</span> <span class="hljs-attr">data-label</span>=<span class="hljs-string">"Close"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fal fa-times"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+        <pre><code class="language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f1</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">if</span>(){} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(){} <span class="hljs-keyword">else</span>{}
+
+    <span class="hljs-keyword">while</span>(){}
+    <span class="hljs-keyword">var</span> a = <span class="hljs-number">10</span>;
+}
+</code></pre>
+        <pre><code class="language-cpp">    <span class="hljs-keyword">int</span> a = <span class="hljs-number">10</span>;
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">f01</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-number">10</span>;
+    }
 </code></pre>
         <p style="width: 100px; border: 1px solid black" class="text-wrap text-lg-right text-capitalize text-white-50 font-weight-normal">test wraptest wraptest wraptest wraptest wraptest wrap</p>
         <a href="#" class="">aaa</a>

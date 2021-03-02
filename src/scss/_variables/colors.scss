@@ -426,6 +426,7 @@ $colors: map-merge(
     "black":                         $black,
     "gray":                       $gray-700,
     "gray-dark":                  $gray-900,
+    "snow":                           $snow,
     "seaShell":                   $seaShell,
     "antiqueWhite":           $antiqueWhite,
     "bisque":                       $bisque,
@@ -512,6 +513,7 @@ $colors-1: map-merge(
     "black":                         $black,
     "gray":                       $gray-700,
     "gray-dark":                  $gray-900,
+    "snow":                           $snow-1,
     "seaShell":                   $seaShell-1,
     "antiqueWhite":           $antiqueWhite-1,
     "bisque":                       $bisque-1,
@@ -597,6 +599,7 @@ $colors-2: map-merge(
     "black":                         $black,
     "gray":                       $gray-700,
     "gray-dark":                  $gray-900,
+    "snow":                           $snow-2,
     "seaShell":                   $seaShell-2,
     "antiqueWhite":           $antiqueWhite-2,
     "bisque":                       $bisque-2,
@@ -683,6 +686,7 @@ $colors-3: map-merge(
     "black":                         $black,
     "gray":                       $gray-700,
     "gray-dark":                  $gray-900,
+    "snow":                           $snow-3,
     "seaShell":                   $seaShell-3,
     "antiqueWhite":           $antiqueWhite-3,
     "bisque":                       $bisque-3,
@@ -762,12 +766,12 @@ $colors-3: map-merge(
 );
 
 $default:       $bisque-1 !default;
-$primary:       $blue !default;
+$primary:       $steelBlue !default;
 $secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
+$success:       $green-1 !default;
+$info:          $cyan-1 !default;
+$warning:       $yellow-1 !default;
+$danger:        $red-1 !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 

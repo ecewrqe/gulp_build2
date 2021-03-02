@@ -1,0 +1,21 @@
+@import "../_mixins/functions";
+@import "../_variables/colors";
+@import "../_mixins/variants";
+
+
+@each $color, $value in $colors{
+  @include bg-variant(#{to_lower_case($color)}, $value);
+}
+
+@each $color, $value in $colors-1{
+  @include bg-variant(#{to_lower_case($color)}-1, $value);
+}
+
+@each $color, $value in $colors-2{
+  @include bg-variant(#{to_lower_case($color)}-2, $value);
+}
+
+@each $color, $value in $colors-3{
+  @include bg-variant(#{to_lower_case($color)}-3, $value);
+}
+

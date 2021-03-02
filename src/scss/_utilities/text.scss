@@ -1,20 +1,35 @@
-$text-decoration-style: solid, dashed, dotted, double, wavy, revert;
-$text-decoration-line: underline, overline, line-through, blink, overline, inherit;
+@import "../_variables/scales";
+@import "../_variables/fontfamily";
+@import "../_variables/colors";
+@import "../_mixins/variants";
+@import "../_mixins/mixins";
+
+@each $name, $value in $colors{
+  @include text-variant(#{$name}, $value);
+}
+
+
 @each $f_size, $f_value in $font-rems{
-  .font-#{$f_size}{
+  .fs-#{$f_size}{
     font-size: $f_value;
   }
 }
 
 @each $f_size, $f_value in $font-pixels{
-  .font-#{$f_size}{
+  .fs-#{$f_size}{
     font-size: $f_value;
   }
 }
 
-@each $style in $text-decoration-style {
-  @each $line in $text-decoration-line {
-    .text-decoration_#{$style}_#{$line} {
+@for $pos from 1 to 100{
+  .fs-p-#{$pos}{
+    font-size: percentage($pos * 0.01);
+  }
+}
+
+@each $s_name, $style in $text-decoration-styles {
+  @each $l_name, $line in $text-decoration-lines {
+    .t-d-#{$s_name}-#{$l_name} {
       text-decoration-style: $style;
       text-decoration-line: $line;
     }
@@ -22,8 +37,44 @@ $text-decoration-line: underline, overline, line-through, blink, overline, inher
 }
 
 
+@each $name, $value in $font-weights {
+  .fw-#{$name}{
+    font-weight: $value;
+  }
+}
+
+
 .visible_collapse{
   visibility: collapse;
 }
+
+
+@each $name, $value in $font-families{
+  .f-fml-#{$name}{
+    font-family: $value;
+  }
+}
+
+
+.f-s-italic{
+  font-style: italic;
+}
+
+
+// vertical aligns
+
+
+
+
+@each $name, $value in $vertical-aligns{
+  .v-a-#{$name} {
+    vertical-align: $value;
+  }
+}
+
+.u-s-none{
+  @include _user-select(none);
+}
+
 
 

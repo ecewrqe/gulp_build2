@@ -1,0 +1,8 @@
+@import "../_mixins/functions";
+@import "colors";
+@import "scales";
+
+$sizeMaxLimit: 500 !default;
+$sizeMinLimit: 0 !default;
+
+$zindex-limit: 10000 !default;

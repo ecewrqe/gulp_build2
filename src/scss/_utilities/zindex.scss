@@ -1,0 +1,8 @@
+@mixin _zindex_variant{
+  @for $zin from 1 to 10000{
+    .zindex-#{$zin}{
+      z-index: $zin;
+    }
+  }
+}
+@include _zindex_variant;

@@ -217,13 +217,13 @@ module.exports = {
          * 
          * "base": {
                 "src": {
-                    "styles": [
+                    "styles.scss": [
                         "{$config.path.src}/scss/entry.scss"
                     ],
                     "scripts": []
                 },
                 "bundle": {
-                    "styles": "{$config.output}/css/app.bundle.css",
+                    "styles.scss": "{$config.output}/css/app.bundle.css",
                     "scripts": ""
                 }
          * the bundle such as base

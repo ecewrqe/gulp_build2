@@ -1,0 +1,91 @@
+@import "../_variables/scales";
+@import "../_variables/colors";
+@import "../_mixins/variants";
+
+@each $name, $value in $colors{
+  .b-c-#{$name}{
+    border-color: $value;
+  }
+  .bt-c-#{$name}{
+    border-top-color: $value !important;
+  }
+  .bl-c-#{$name}{
+    border-left-color: $value !important;
+  }
+
+  .br-c-#{$name}{
+    border-right-color: $value !important;
+  }
+
+  .bb-c-#{$name}{
+    border-bottom-color: $value !important;
+  }
+
+  // default
+
+  .bd-#{$name}{
+    border: $px-1 solid $value;
+  }
+
+  .bdt-#{$name}{
+    border-top: $px-1 solid $value;
+  }
+
+  .bdl-#{$name}{
+    border-left: $px-1 solid $value;
+  }
+
+  .bdr-#{$name}{
+    border-right: $px-1 solid $value;
+  }
+
+  .bdb-#{$name}{
+    border-bottom: $px-1 solid $value;
+  }
+}
+
+@each $name, $value in $border-pixels{
+  .b-w-#{$name}{
+    border-width: $value;
+  }
+
+  .bl-w-#{$name}{
+    border-left-width: $value !important;
+  }
+
+  .bt-w-#{$name}{
+    border-top-width: $value !important;
+  }
+
+  .br-w-#{$name}{
+    border-right-width: $value !important;
+  }
+
+  .bb-w-#{$name}{
+    border-bottom-width: $value !important;
+  }
+}
+
+@each $name, $value in $border-styles{
+  .b-s-#{$name}{
+    border-style: $value;
+  }
+
+  .bl-s-#{$name}{
+    border-left-style: $value !important;
+  }
+
+  .bt-s-#{$name}{
+    border-top-style: $value !important;
+  }
+
+  .br-s-#{$name}{
+    border-right-style: $value !important;
+  }
+
+  .bb-s-#{$name}{
+    border-bottom-style: $value !important;
+  }
+}
+
+// border radius

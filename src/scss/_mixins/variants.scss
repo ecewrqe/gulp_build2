@@ -1,4 +1,32 @@
-// link variant
+/* bg variant ===========================*/
+@mixin bg-variant($parent, $color){
+  .bg-#{$parent}{
+    color: color-yiq($color);
+    background-color: $color !important;
+  }
+
+  a.bg-#{$parent},
+  button.bg-#{$parent}{
+    &:hover{
+      color: color-yiq(darken($color, 15%));
+      background-color: darken($color, 15%) !important;
+    }
+  }
+}
+
+@mixin bg-gradient-variant($parent, $color){
+  #{$parent}{
+    background: $color linear-gradient(180deg, mix($body-bg, $color, 15%), $color) repeat-x !important;
+  }
+}
+
+@mixin text-variant($parent, $color){
+  .tc-#{$parent}{
+    color: $color !important;
+  }
+}
+
+/* link variant=========================*/
 @mixin _link-variant($value){
   color: $value;
   &:hover{
@@ -82,3 +110,4 @@
     box-shadow: none;
   }
 }
+
